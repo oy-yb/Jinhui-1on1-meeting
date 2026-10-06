@@ -1,0 +1,13 @@
+# --- Secrets (never commit) ---
+config_local.py
+
+# --- Assets / materials (Chinese teaching script + videos; not for the public repo) ---
+detailed transcriptmd.md
+*.mp4
+materials/
+
+# --- Python / runtime ---
+__pycache__/
+*.pyc
+server.log
+.DS_Store

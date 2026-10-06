@@ -1,0 +1,6 @@
+# 无 pip 依赖：全部使用 Python 标准库。
+# tkinter 随 Python 自带（macOS 若缺：brew install python-tk）。
+#
+# 系统级依赖（非 pip）：
+# - FRAME_SOURCE = "ffmpeg" 时：brew install ffmpeg
+# - FRAME_SOURCE = "screen" 时：需要 macOS「屏幕录制」权限（系统设置 → 隐私与安全性 → 屏幕录制）

@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Video Companion — Watch & Ask</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, "PingFang SC", "Helvetica Neue", Arial, sans-serif;
+    background: #0f172a; color: #e2e8f0; height: 100vh; display: flex; flex-direction: column;
+  }
+  header {
+    position: relative;
+    display: flex; align-items: center; gap: 12px; padding: 10px 16px;
+    background: #1e293b; border-bottom: 1px solid #334155; font-size: 13px; color: #94a3b8;
+  }
+  header b { color: #f1f5f9; font-weight: 600; }
+  #spots-menu-btn { background: #1e293b; color: #7dd3fc; border: 1px solid #334155;
+    border-radius: 999px; padding: 3px 10px; font-size: 12px; cursor: pointer; }
+  #spots-menu-btn:hover { border-color: #38bdf8; }
+  .spots-panel { position: absolute; top: 100%; left: 8px; z-index: 999; width: 320px;
+    max-height: 62vh; overflow-y: auto; background: #0f172a; border: 1px solid #334155;
+    border-radius: 12px; box-shadow: 0 12px 32px rgba(0, 0, 0, .5); padding: 10px; }
+  .spots-panel.hidden { display: none; }
+  .sp-title { font-size: 12px; color: #94a3b8; margin-bottom: 8px; }
+  .sp-item { border: 1px solid #334155; border-radius: 8px; padding: 8px 10px;
+    margin-bottom: 8px; cursor: pointer; background: #0f172a; }
+  .sp-item:hover { border-color: #38bdf8; }
+  .sp-item.sp-hidden { opacity: .45; }
+  .sp-item .sp-label { font-weight: 600; color: #fbbf24; font-size: 13px; }
+  .sp-item .sp-time { font-size: 11px; color: #94a3b8; margin-top: 2px; }
+  .sp-item .sp-q { font-size: 11px; color: #64748b; margin-top: 2px;
+    overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .sp-item .sp-desc { font-size: 12px; color: #e2e8f0; margin-top: 4px; }
+  .sp-empty { color: #64748b; font-size: 12px; text-align: center; padding: 12px 0; }
+  header b { color: #f1f5f9; font-weight: 600; }
+  #status-time { color: #38bdf8; font-variant-numeric: tabular-nums; font-weight: 700; }
+  #status-chapter { color: #e2e8f0; }
+  #status-snippet { color: #94a3b8; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; flex: 1; }
+  #status-meta { color: #64748b; white-space: nowrap; }
+
+  main { flex: 1; display: flex; min-height: 0; }
+
+  .video-pane { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center;
+    background: #020617; padding: 16px; gap: 10px; min-width: 0; }
+  .video-wrap { position: relative; display: inline-block; }
+  video { max-width: 100%; max-height: calc(100vh - 140px); background: #000; border-radius: 10px; outline: none; display: block; }
+  #spots { position: absolute; inset: 0; pointer-events: none; overflow: hidden; }
+  .spot { position: absolute; pointer-events: auto; cursor: pointer;
+    border: 2px solid #fbbf24; border-radius: 8px;
+    box-shadow: 0 0 0 3px rgba(251, 191, 36, 0.25);
+    animation: spot-pulse 1.2s ease-in-out infinite; z-index: 10; }
+  .spot:hover { border-color: #f87171; box-shadow: 0 0 0 3px rgba(248, 113, 113, 0.3); }
+  .spot-menu { position: fixed; z-index: 999; display: none; background: #0f172a;
+    border: 1px solid #334155; border-radius: 10px; padding: 4px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, .5); }
+  .spot-menu button { display: block; width: 100%; text-align: left; background: none;
+    border: none; color: #e2e8f0; font-size: 13px; padding: 7px 12px;
+    border-radius: 7px; cursor: pointer; }
+  .spot-menu button:hover { background: #1e293b; }
+  .spot-menu .sm-del:hover { background: rgba(239, 68, 68, .15); color: #f87171; }
+  .spot-menu .sm-hide:hover { background: rgba(251, 191, 36, .12); color: #fbbf24; }
+  .spot-jump { background: rgba(251, 191, 36, .12); color: #fbbf24; border: 1px solid rgba(251, 191, 36, .45);
+    border-radius: 999px; padding: 3px 10px; margin: 4px 6px 0 0; font-size: 12px; cursor: pointer; }
+  .spot-jump:hover { background: rgba(251, 191, 36, .25); }
+  .spot-menu .sm-edit:hover { color: #38bdf8; }
+  .spot-label { position: absolute; top: -22px; left: -2px; background: #fbbf24; color: #111827;
+    font-size: 12px; font-weight: 600; padding: 1px 8px; border-radius: 6px; white-space: nowrap; }
+  .spot-desc { position: absolute; bottom: -26px; left: -2px; background: rgba(17, 24, 39, 0.9);
+    color: #f1f5f9; font-size: 11px; padding: 2px 8px; border-radius: 6px;
+    white-space: nowrap; }
+  @keyframes spot-pulse {
+    0%, 100% { box-shadow: 0 0 0 0 rgba(251, 191, 36, .85); }
+    50%      { box-shadow: 0 0 0 16px rgba(251, 191, 36, 0); }
+  }
+  .tip { color: #64748b; font-size: 12px; text-align: center; }
+  .pane-tools { width: 100%; display: flex; justify-content: flex-end; }
+  #compare-btn { background: #1e293b; color: #7dd3fc; border: 1px solid #334155;
+    border-radius: 999px; padding: 5px 12px; font-size: 12px; cursor: pointer; }
+  #compare-btn:hover { border-color: #38bdf8; }
+  #compare-btn.on { background: #2563eb; color: #fff; border-color: #2563eb; }
+  #hide-spots-btn { background: #1e293b; color: #94a3b8; border: 1px solid #334155;
+    border-radius: 999px; padding: 5px 12px; font-size: 12px; cursor: pointer; }
+  #hide-spots-btn:hover { border-color: #94a3b8; }
+  #hide-spots-btn.on { background: rgba(239, 68, 68, .15); color: #f87171; border-color: #f87171; }
+  .compare-row { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+  .compare-col { display: flex; flex-direction: column; align-items: center; gap: 6px; }
+  .col-label { font-size: 12px; color: #94a3b8; background: #1e293b;
+    padding: 2px 10px; border-radius: 999px; }
+  .col-label.ai { color: #38bdf8; }
+  .col-label.raw { color: #fbbf24; }
+  .retry-btn { background: #b45309; color: #fff; border: none; border-radius: 8px;
+    padding: 6px 14px; margin-top: 8px; font-size: 13px; cursor: pointer; }
+  .retry-btn:hover { background: #d97706; }
+
+  .chat-pane { width: 400px; min-width: 320px; display: flex; flex-direction: column;
+    background: #0f172a; border-left: 1px solid #334155; }
+  #messages { flex: 1; overflow-y: auto; padding: 14px; display: flex; flex-direction: column; gap: 10px; }
+  .msg { max-width: 92%; padding: 9px 12px; border-radius: 12px; font-size: 14px; line-height: 1.55;
+    white-space: pre-wrap; word-break: break-word; }
+  .msg.user { align-self: flex-end; background: #2563eb; color: #fff; border-bottom-right-radius: 3px; }
+  .msg.agent { align-self: flex-start; background: #1e293b; color: #e2e8f0; border: 1px solid #334155;
+    border-bottom-left-radius: 3px; }
+  .msg.dim { align-self: flex-start; background: transparent; color: #64748b; font-size: 12.5px;
+    border: 1px dashed #334155; }
+  .msg .ts { display: block; font-size: 11px; color: #64748b; margin-top: 5px; }
+
+  .ask-row { display: flex; gap: 8px; padding: 12px; border-top: 1px solid #334155; }
+  .ask-row input { flex: 1; background: #1e293b; border: 1px solid #334155; color: #f1f5f9;
+    border-radius: 8px; padding: 10px 12px; font-size: 14px; outline: none; }
+  .ask-row input:focus { border-color: #2563eb; }
+  .ask-row button { background: #2563eb; color: #fff; border: none; border-radius: 8px;
+    padding: 10px 18px; font-size: 14px; font-weight: 600; cursor: pointer; }
+  .ask-row button:disabled { opacity: .5; cursor: wait; }
+
+  .quick { display: flex; gap: 8px; padding: 0 12px 10px; flex-wrap: wrap; }
+  #att-toggle { background: #1e293b; color: #64748b; border: 1px solid #334155;
+    border-radius: 999px; padding: 6px 12px; font-size: 12px; cursor: pointer; }
+  #att-toggle:hover { border-color: #fbbf24; color: #e2e8f0; }
+  #att-toggle.on { background: rgba(251, 191, 36, .15); color: #fbbf24; border-color: #fbbf24; }
+  .quick button { background: #1e293b; color: #7dd3fc; border: 1px solid #334155; border-radius: 999px;
+    padding: 5px 12px; font-size: 12px; cursor: pointer; }
+  .quick button:hover { border-color: #38bdf8; }
+
+  #region-toggle { background: #1e293b; color: #64748b; border: 1px solid #334155;
+    border-radius: 999px; padding: 5px 12px; font-size: 12px; cursor: pointer; }
+  #region-toggle:hover { border-color: #38bdf8; color: #e2e8f0; }
+  #region-toggle.on { background: rgba(56, 189, 248, .15); color: #38bdf8; border-color: #38bdf8; }
+  .video-wrap.region-on { cursor: crosshair; }
+  #sel-layer { position: absolute; inset: 0; pointer-events: none; z-index: 5; }
+  #sel-rect { position: absolute; border: 2px solid #38bdf8; background: rgba(56, 189, 248, .18);
+    display: none; box-sizing: border-box; }
+  #region-panel, #edit-panel { position: absolute; top: 10px; right: 10px; width: 300px; z-index: 30;
+    background: #0f172a; border: 1px solid #334155; border-radius: 12px; padding: 12px;
+    color: #e2e8f0; box-shadow: 0 8px 24px rgba(0,0,0,.5); }
+  #region-panel.hidden, #edit-panel.hidden { display: none; }
+  .rp-title { font-size: 13px; font-weight: 600; margin-bottom: 8px; }
+  .rp-title span { color: #94a3b8; font-weight: 400; }
+  #rp-preview { width: 100%; border-radius: 8px; border: 1px solid #334155; margin-bottom: 8px; }
+  #rp-prompt, #rp-note, #ep-label, #ep-desc, #ep-prompt { width: 100%; box-sizing: border-box;
+    background: #1e293b; border: 1px solid #334155; color: #f1f5f9; border-radius: 8px;
+    padding: 8px; font-size: 13px; outline: none; }
+  #rp-note, #ep-desc { min-height: 54px; resize: vertical; }
+  #rp-prompt, #ep-label, #ep-prompt { min-height: auto; }
+  #rp-prompt, #rp-note, #ep-label, #ep-desc { margin-bottom: 8px; }
+  #rp-prompt:focus, #rp-note:focus, #ep-label:focus, #ep-desc:focus, #ep-prompt:focus { border-color: #38bdf8; }
+  .ep-time { display: flex; align-items: center; gap: 6px; margin-bottom: 8px; font-size: 12px; color: #94a3b8; }
+  .ep-time input { width: 70px; background: #1e293b; border: 1px solid #334155; color: #f1f5f9;
+    border-radius: 6px; padding: 4px 6px; font-size: 12px; outline: none; }
+  .ep-time input:focus { border-color: #38bdf8; }
+  .rp-result { margin-top: 8px; font-size: 12.5px; color: #7dd3fc; background: #1e293b;
+    border-radius: 8px; padding: 8px; white-space: pre-wrap; max-height: 180px; overflow: auto; }
+  .rp-result.hidden { display: none; }
+  .rp-result.err { color: #f87171; }
+  .rp-btns { display: flex; gap: 6px; margin-top: 8px; flex-wrap: wrap; }
+  .rp-btns button { background: #1e293b; color: #7dd3fc; border: 1px solid #334155;
+    border-radius: 8px; padding: 6px 10px; font-size: 12px; cursor: pointer; }
+  .rp-btns button:hover { border-color: #38bdf8; }
+  #rp-save { background: #2563eb; color: #fff; border-color: #2563eb; }
+  #rp-cancel { color: #94a3b8; }
+  .spot.manual { border-color: #38bdf8;
+    box-shadow: 0 0 0 1.5px rgba(56, 189, 248, .5), 0 0 12px rgba(56, 189, 248, .35); }
+  .spot.manual .spot-label { background: #38bdf8; color: #0f172a; }
+
+  @media (max-width: 900px) {
+    main { flex-direction: column; }
+    .chat-pane { width: 100%; border-left: none; border-top: 1px solid #334155; height: 45vh; }
+  }
+</style>
+</head>
+<body>
+  <header>
+    <b>Video Companion</b>
+    <button id="spots-menu-btn" title="View saved annotations">📌 Spots</button>
+    <div id="spots-panel" class="spots-panel hidden">
+      <div class="sp-title">Saved annotations (click an item to jump to its time)</div>
+      <div id="spots-list"></div>
+      <div class="sp-empty" id="spots-empty">No saved annotations yet</div>
+    </div>
+    <span id="status-time">00:00</span>
+    <span id="status-chapter">…</span>
+    <span id="status-snippet"></span>
+    <span id="status-meta"></span>
+  </header>
+
+  <main>
+    <section class="video-pane">
+      <div class="pane-tools">
+        <button id="region-toggle" title="When on, drag a box on the frame to annotate a region or ask the agent about it">🖱 Region Tag</button>
+        <button id="hide-spots-btn" title="Hide/show annotation animations on the frame">👁 Hide Spots</button>
+        <button id="compare-btn" title="Show the original video on the right, synced by progress with the AI version">⧉ Compare Original</button>
+      </div>
+      <div class="compare-row" id="compare-row">
+        <div class="compare-col" id="col-ai">
+          <span class="col-label ai">AI Generated</span>
+          <div class="video-wrap">
+            <video id="v" src="/video" controls playsinline></video>
+            <div id="spots"></div>
+            <div id="sel-layer"><div id="sel-rect"></div></div>
+            <div id="region-panel" class="hidden">
+              <div class="rp-title">Region annotation <span id="rp-time"></span></div>
+              <img id="rp-preview" alt="region preview" style="display:none">
+              <textarea id="rp-prompt" placeholder="🤖 Ask the agent: type your own prompt, e.g. \"Watch the child's hand movements over a few seconds - what mental pattern does it suggest?\""></textarea>
+              <textarea id="rp-note" placeholder="Annotation note (saved as the caption; leave empty to use the AI result)"></textarea>
+              <div id="rp-result" class="rp-result hidden"></div>
+              <div class="rp-btns">
+                <button id="rp-analyze">🤖 Ask Agent</button>
+                <button id="rp-save">💾 Save Spot</button>
+                <button id="rp-cancel">Cancel</button>
+              </div>
+            </div>
+            <div id="edit-panel" class="hidden">
+              <div class="rp-title">Edit Spot</div>
+              <input id="ep-label" placeholder="Caption title (label)">
+              <textarea id="ep-desc" placeholder="Caption content (desc)"></textarea>
+              <div class="ep-time">
+                Time <input id="ep-start" type="number" step="0.5" min="0"> –
+                <input id="ep-end" type="number" step="0.5" min="0"> sec
+              </div>
+              <input id="ep-prompt" placeholder="🤖 Ask AI (optional): a question about this region, e.g. \"What mental pattern does this action suggest?\"">
+              <div id="ep-result" class="rp-result hidden"></div>
+              <div class="rp-btns">
+                <button id="ep-ask">🤖 Ask AI</button>
+                <button id="ep-fill">📥 Fill Caption</button>
+                <button id="ep-save">💾 Save</button>
+                <button id="ep-cancel">Cancel</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tip">Play the video and ask anything in the right panel; annotation animations persist across chats. Right-click a spot to delete / hide / edit it.</div>
+    </section>
+
+    <section class="chat-pane">
+      <div id="messages"></div>
+      <div class="quick">
+        <button data-q="What sound is the therapist modeling?">Sound demo?</button>
+        <button data-q="What did the boy say and how did the therapist correct him?">What did he say?</button>
+        <button data-q="What is the therapy goal of this segment?">Therapy goal?</button>
+        <button id="att-toggle" title="When on, answers include highlight animations for expressions/actions in the frame">🎯 Annotate</button>
+      </div>
+      <form class="ask-row" id="ask-form">
+        <input id="ask-input" placeholder="Ask about anything you didn't understand in the video…" autocomplete="off">
+        <button id="ask-btn" type="submit">Ask</button>
+      </form>
+    </section>
+  </main>
+
+<script>
+"use strict";
+const video = document.getElementById("v");
+const form = document.getElementById("ask-form");
+const input = document.getElementById("ask-input");
+const btn = document.getElementById("ask-btn");
+const msgs = document.getElementById("messages");
+
+function addMsg(role, text, meta) {
+  const div = document.createElement("div");
+  div.className = "msg " + role;
+  div.textContent = text;
+  if (meta) {
+    const ts = document.createElement("span");
+    ts.className = "ts";
+    ts.textContent = meta;
+    div.appendChild(ts);
+  }
+  msgs.appendChild(div);
+  msgs.scrollTop = msgs.scrollHeight;
+  return div;
+}
+
+function fmt(sec) {
+  sec = Math.max(0, Math.floor(sec || 0));
+  const m = Math.floor(sec / 60), s = sec % 60;
+  return String(m).padStart(2, "0") + ":" + String(s).padStart(2, "0");
+}
+
+// ---- Spot animation layer: annotations "accumulate and persist"; new chats do not overwrite; right-click to manage ----
+// Each spot: {id, start, end, label, box, desc, q, ts}
+let savedSpots = [];
+const spotsLayer = document.getElementById("spots");
+const SPOTS_KEY = "vsr_spots";
+
+function loadSpots() {
+  try { savedSpots = JSON.parse(localStorage.getItem(SPOTS_KEY) || "[]"); }
+  catch (e) { savedSpots = []; }
+}
+function saveSpots() {
+  try { localStorage.setItem(SPOTS_KEY, JSON.stringify(savedSpots)); } catch (e) {}
+}
+function removeSpot(id) {
+  savedSpots = savedSpots.filter(s => s.id !== id);
+  saveSpots();
+  refreshSpotCount();
+}
+// Hide a single spot: mark hidden; no longer rendered (data kept, restorable from the spot list)
+function hideOneSpot(id) {
+  const s = savedSpots.find(x => x.id === id);
+  if (s) { s.hidden = true; saveSpots(); }
+}
+loadSpots();
+
+// ---- Top-left spots menu: view saved annotations ----
+const spotsMenuBtn = document.getElementById("spots-menu-btn");
+const spotsPanel = document.getElementById("spots-panel");
+const spotsList = document.getElementById("spots-list");
+const spotsEmpty = document.getElementById("spots-empty");
+
+function escapeHtml(s) {
+  return String(s).replace(/[&<>"']/g,
+    c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+}
+// Decide whether a new spot p duplicates a saved spot s:
+// time overlap >= 1.5s AND labels identical / one contains the other / share >= 2 chars -> same spot
+function isDupSpot(p, s) {
+  const ov = Math.min(p.end, s.end) - Math.max(p.start, s.start);
+  if (ov < 1.5) return false;
+  const a = String(p.label), b = String(s.label);
+  if (a === b || a.includes(b) || b.includes(a)) return true;
+  let shared = 0;
+  for (const ch of a) { if (b.includes(ch)) shared++; }
+  return shared >= 2;
+}
+function refreshSpotCount() {
+  spotsMenuBtn.textContent = "📌 Spots (" + savedSpots.length + ")";
+}
+function renderSpotList() {
+  spotsList.innerHTML = "";
+  const sorted = [...savedSpots].sort((a, b) => a.start - b.start);
+  spotsEmpty.style.display = sorted.length ? "none" : "block";
+  for (const s of sorted) {
+    const it = document.createElement("div");
+    it.className = "sp-item" + (s.hidden ? " sp-hidden" : "");
+    it.title = s.hidden ? "Hidden - click to restore and jump" : "Click to jump to this time";
+    it.innerHTML =
+      '<div class="sp-label">' + escapeHtml(s.label) + (s.hidden ? " (hidden)" : "") + "</div>" +
+      '<div class="sp-time">⏱ ' + fmt(s.start) + " – " + fmt(s.end) + "</div>" +
+      (s.q ? '<div class="sp-q">💬 ' + escapeHtml(s.q) + "</div>" : "") +
+      (s.desc ? '<div class="sp-desc">' + escapeHtml(s.desc) + "</div>" : "");
+    it.addEventListener("click", () => {
+      if (s.hidden) { s.hidden = false; saveSpots(); }   // clicking restores the display
+      video.currentTime = (s.start + s.end) / 2;   // jump to mid-range to watch the animation
+      const pp = video.play();
+      if (pp && pp.catch) pp.catch(() => {});
+      hideSpotsPanel();
+    });
+    spotsList.appendChild(it);
+  }
+}
+function hideSpotsPanel() { spotsPanel.classList.add("hidden"); }
+spotsMenuBtn.addEventListener("click", () => {
+  if (spotsPanel.classList.contains("hidden")) {
+    renderSpotList();
+    spotsPanel.classList.remove("hidden");
+  } else hideSpotsPanel();
+});
+document.addEventListener("click", (e) => {
+  if (!spotsPanel.contains(e.target) && e.target !== spotsMenuBtn) hideSpotsPanel();
+});
+refreshSpotCount();
+
+// ---- Hide/show on-frame annotations: rendering only, saved spots are never deleted ----
+const hideBtn = document.getElementById("hide-spots-btn");
+let spotsHidden = localStorage.getItem("vsr_spots_hidden") === "1";
+function syncHide() {
+  hideBtn.textContent = spotsHidden ? "👁 Spots Hidden" : "👁 Hide Spots";
+  hideBtn.classList.toggle("on", spotsHidden);
+  hideBtn.title = spotsHidden ? "Spots hidden - click to show again" : "Hide annotation animations on the frame";
+  localStorage.setItem("vsr_spots_hidden", spotsHidden ? "1" : "0");
+}
+hideBtn.addEventListener("click", () => { spotsHidden = !spotsHidden; syncHide(); });
+syncHide();
+
+// ---- Right-click menu: delete / hide / edit (nothing is deleted directly - the user chooses) ----
+const spotMenu = document.createElement("div");
+spotMenu.className = "spot-menu";
+spotMenu.innerHTML =
+  '<button class="sm-del">🗑 Delete Spot</button>' +
+  '<button class="sm-hide">🙈 Hide Spot</button>' +
+  '<button class="sm-edit">✏️ Edit Spot</button>';
+document.body.appendChild(spotMenu);
+let menuTarget = null;
+
+function showSpotMenu(x, y, id) {
+  menuTarget = id;
+  spotMenu.style.display = "block";
+  spotMenu.style.left = Math.min(x, window.innerWidth - 160) + "px";
+  spotMenu.style.top = Math.min(y, window.innerHeight - 130) + "px";
+}
+function hideSpotMenu() {
+  spotMenu.style.display = "none";
+  menuTarget = null;
+}
+spotMenu.querySelector(".sm-del").addEventListener("click", () => {
+  if (menuTarget !== null) removeSpot(menuTarget);
+  hideSpotMenu();
+});
+spotMenu.querySelector(".sm-hide").addEventListener("click", () => {
+  if (menuTarget !== null) hideOneSpot(menuTarget);
+  hideSpotMenu();
+});
+spotMenu.querySelector(".sm-edit").addEventListener("click", () => {
+  if (menuTarget !== null) openEditPanel(menuTarget);
+  hideSpotMenu();
+});
+document.addEventListener("click", (e) => {
+  if (!spotMenu.contains(e.target)) hideSpotMenu();
+});
+
+const SPOT_EXTRA_SECONDS = 3;   // seconds the animation keeps showing after the spot range ends (longer persistence)
+function renderSpots() {
+  spotsLayer.innerHTML = "";
+  if (spotsHidden) return;               // user hid annotations: skip rendering (data kept)
+  const t = video.currentTime;
+  let shown = 0;
+  for (const s of savedSpots) {
+    if (s.hidden) continue;                    // user hid it: skip rendering
+    if (t < s.start || t > s.end + SPOT_EXTRA_SECONDS) continue;   // keep showing after the range ends so the animation lasts longer
+    const d = document.createElement("div");
+    d.className = "spot" + (s.manual ? " manual" : "");
+    d.title = s.manual ? "Manual spot (right-click to delete/hide/edit)" : "Right-click to manage this spot";
+    const off = shown * 1.2;                  // offset when several spots hit at once, avoiding full overlap
+    d.style.left = (s.box[0] * 100 + off).toFixed(2) + "%";
+    d.style.top = (s.box[1] * 100 + off).toFixed(2) + "%";
+    d.style.width = Math.max(2, (s.box[2] - s.box[0]) * 100).toFixed(2) + "%";
+    d.style.height = Math.max(2, (s.box[3] - s.box[1]) * 100).toFixed(2) + "%";
+    const lb = document.createElement("span");
+    lb.className = "spot-label";
+    lb.textContent = s.label;
+    d.appendChild(lb);
+    if (s.desc) {
+      const dc = document.createElement("span");
+      dc.className = "spot-desc";
+      dc.textContent = s.desc;
+      d.appendChild(dc);
+    }
+    d.addEventListener("contextmenu", (e) => {
+      e.preventDefault();
+      showSpotMenu(e.clientX, e.clientY, s.id);
+    });
+    spotsLayer.appendChild(d);
+    shown++;
+  }
+}
+setInterval(renderSpots, 250);   // refresh continuously while playing; animations follow the timeline
+
+// ---- Report the playback position every 500ms ----
+let lastReport = 0;
+video.addEventListener("timeupdate", () => {
+  const now = Date.now();
+  if (now - lastReport < 500) return;
+  lastReport = now;
+  fetch("/position", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ t: video.currentTime }),
+  }).catch(() => {});
+});
+
+// ---- Refresh the status bar every second: time / chapter / snippet ----
+setInterval(async () => {
+  const r = await fetch("/now?t=" + video.currentTime).catch(() => null);
+  if (!r) return;
+  const d = await r.json();
+  document.getElementById("status-time").textContent = fmt(d.t);
+  document.getElementById("status-chapter").textContent = " · " + d.chapter;
+  document.getElementById("status-snippet").textContent = d.snippet || "";
+}, 1000);
+
+// ---- Initial state ----
+fetch("/status").then(r => r.json()).then(d => {
+  document.getElementById("status-meta").textContent =
+    (d.video ? d.video + " · " : "") + d.model + " · frames:" + d.frame
+    + (d.window_max ? " (window ≤" + d.window_max + "s)" : "")
+    + (d.memory_turns ? " · memory " + d.memory_turns + " turns" : "") + " · " + d.entries + " segments";
+  if (!d.raw_video) {
+    const b = document.getElementById("compare-btn");
+    if (b) { b.style.display = "none"; }
+  }
+});
+addMsg("dim", "Welcome! Play the video and ask about anything you didn't understand.\nExample: What sound is the therapist modeling?", null);
+
+// ---- Side-by-side comparison with the original video (synced by progress ratio) ----
+const compareBtn = document.getElementById("compare-btn");
+const compareRow = document.getElementById("compare-row");
+let v2 = null;   // original video element
+let comparing = false;
+
+function syncV2() {
+  if (!v2 || !v2.duration || !video.duration) return;
+  v2.currentTime = video.currentTime / video.duration * v2.duration;
+}
+
+function toggleCompare() {
+  comparing = !comparing;
+  compareBtn.classList.toggle("on", comparing);
+  if (comparing) {
+    const col = document.createElement("div");
+    col.className = "compare-col";
+    col.innerHTML = '<span class="col-label raw">Original</span>';
+    v2 = document.createElement("video");
+    v2.src = "/raw-video";
+    v2.controls = true;
+    v2.playsinline = true;
+    col.appendChild(v2);
+    compareRow.appendChild(col);
+    syncV2();                       // initially align to current progress
+  } else {
+    if (v2) { v2.pause(); v2.remove(); v2 = null; }
+  }
+}
+compareBtn.addEventListener("click", toggleCompare);
+
+// Follow: AI-version progress change -> original video syncs by ratio; play/pause are synced too
+video.addEventListener("timeupdate", syncV2);
+video.addEventListener("play", () => { if (v2) v2.play().catch(() => {}); });
+video.addEventListener("pause", () => { if (v2) v2.pause(); });
+
+// ---- Ask (reusable: submit and retry share this) ----
+async function ask(q, t) {
+  if (!q || btn.disabled) return;
+  input.value = "";
+  btn.disabled = true;
+  addMsg("user", q, "@" + fmt(t));
+  const wait = addMsg("dim", "Agent is watching the frames + checking the script…");
+  try {
+    const r = await fetch("/ask", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ question: q, t, attention_enabled: attOn }),
+    });
+    const d = await r.json();
+    wait.remove();
+    if (d.ok) {
+      let meta = "Based on @" + fmt(d.t);
+      if (d.window && d.window.frames > 0) {
+        meta += " frames (window " + Math.round(d.window.seconds) + "s · " + d.window.frames + ") & script";
+      } else {
+        meta += " based on script";
+      }
+      // Dedupe this round's spots against saved ones - duplicates are not saved again; guide the user to existing spots
+      let added = false;
+      if (d.attention && d.attention.points && d.attention.points.length) {
+        const fresh = [], dups = [];
+        for (const p of d.attention.points) {
+          const hit = savedSpots.find(s => isDupSpot(p, s));
+          if (hit) dups.push(hit); else fresh.push(p);
+        }
+        if (fresh.length) {
+          meta += " · marked " + fresh.length + " spot(s)";
+          for (const p of fresh) {
+            savedSpots.push({
+              id: Date.now() + "-" + Math.floor(Math.random() * 1e6),
+              start: p.start, end: p.end, label: p.label,
+              box: p.box, desc: p.desc, q: q, ts: Date.now(),
+            });
+          }
+          saveSpots();
+          added = true;
+        }
+        if (dups.length) {
+          meta += " · " + dups.length + " already marked, guided only";
+          const guide = addMsg("dim", "These spots were already marked before - click to jump to them:");
+          for (const s of dups) {
+            const chip = document.createElement("button");
+            chip.className = "spot-jump";
+            chip.textContent = s.label + " @" + fmt(s.start);
+            chip.title = "Jump to " + fmt(s.start) + " to see the animation";
+            chip.onclick = () => {
+              video.currentTime = (s.start + s.end) / 2;
+              const pp = video.play();
+              if (pp && pp.catch) pp.catch(() => {});
+            };
+            guide.appendChild(chip);
+          }
+        }
+      }
+      addMsg("agent", d.answer, meta);
+      // Replay guidance: when new spots were added, jump back to the question time and play so the animations are visible
+      if (added) {
+        video.currentTime = d.t;
+        const pp = video.play();
+        if (pp && pp.catch) pp.catch(() => {});   // if the browser blocks autoplay, stay on the current frame; spots stay visible
+      }
+    }
+    else if (d.blocked) {
+      // Content-safety block (random): no downgrade; ask the user to retry the same question (same time point)
+      const wrap = addMsg("dim", "⚠️ " + d.error);
+      const box = wrap.closest(".msg") || wrap.parentElement;
+      const btn2 = document.createElement("button");
+      btn2.className = "retry-btn";
+      btn2.textContent = "🔄 Retry";
+      btn2.onclick = () => ask(q, t);
+      box.appendChild(btn2);
+    }
+    else addMsg("dim", "Error: " + d.error);
+  } catch (err) {
+    wait.remove();
+    addMsg("dim", "Request failed: " + err);
+  }
+  btn.disabled = false;
+  input.focus();
+}
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  const q = input.value.trim();
+  if (!q) return;
+  ask(q, video.currentTime);
+});
+
+// ---- Quick questions (skips the annotation toggle button) ----
+document.querySelectorAll(".quick button").forEach(b => {
+  b.addEventListener("click", () => {
+    if (!b.dataset.q) return;   // the #att-toggle switch has no data-q; skip
+    input.value = b.dataset.q;
+    form.requestSubmit();
+  });
+});
+
+// ---- Annotation skill toggle: when on, answers include expression/action spot animations; otherwise analysis only ----
+const attToggle = document.getElementById("att-toggle");
+let attOn = localStorage.getItem("vsr_att_on") === "1";
+function syncAtt() {
+  attToggle.classList.toggle("on", attOn);
+  attToggle.textContent = attOn ? "🎯 Annotate On" : "🎯 Annotate Off";
+  localStorage.setItem("vsr_att_on", attOn ? "1" : "0");
+}
+attToggle.addEventListener("click", () => { attOn = !attOn; syncAtt(); });
+syncAtt();
+
+// ---- Manual region-tagging skill: when "🖱 Region Tag" is on, drag a box on the frame ----
+// After selecting: 1) add a note and save directly; 2) ask the Agent to analyze the circled part (what it is, what to attend to),
+// then save the analysis as a spot. Manual spots share the savedSpots system with AI spots (blue style distinguishes them).
+const regionToggle = document.getElementById("region-toggle");
+const videoWrap = document.querySelector(".video-wrap");
+const selRect = document.getElementById("sel-rect");
+const regionPanel = document.getElementById("region-panel");
+const rpPreview = document.getElementById("rp-preview");
+const rpNote = document.getElementById("rp-note");
+const rpPrompt = document.getElementById("rp-prompt");
+const rpResult = document.getElementById("rp-result");
+const rpTime = document.getElementById("rp-time");
+const rpAnalyze = document.getElementById("rp-analyze");
+const rpSave = document.getElementById("rp-save");
+const rpCancel = document.getElementById("rp-cancel");
+let regionOn = localStorage.getItem("vsr_region_on") === "1";
+let regionBox = null, regionB64 = null, regionT = 0;
+
+function syncRegion() {
+  regionToggle.classList.toggle("on", regionOn);
+  regionToggle.textContent = regionOn ? "🖱 Region On" : "🖱 Region Tag";
+  videoWrap.classList.toggle("region-on", regionOn);
+  localStorage.setItem("vsr_region_on", regionOn ? "1" : "0");
+}
+regionToggle.addEventListener("click", () => { regionOn = !regionOn; syncRegion(); });
+syncRegion();
+
+// ---- Drag to select ----
+let selStart = null, suppressClick = false;
+videoWrap.addEventListener("mousedown", (e) => {
+  if (!regionOn || e.button !== 0) return;
+  if (e.target.closest("#region-panel, #edit-panel, .spot-menu")) return;  // no selection inside panels
+  e.preventDefault();                       // avoid a drag accidentally toggling play/pause
+  selStart = { x: e.clientX, y: e.clientY };
+  selRect.style.display = "block";
+  const r = videoWrap.getBoundingClientRect();
+  selRect.style.left = (e.clientX - r.left) + "px";
+  selRect.style.top = (e.clientY - r.top) + "px";
+  selRect.style.width = "0px";
+  selRect.style.height = "0px";
+});
+window.addEventListener("mousemove", (e) => {
+  if (!selStart) return;
+  const r = videoWrap.getBoundingClientRect();
+  const x0 = Math.min(selStart.x, e.clientX) - r.left, x1 = Math.max(selStart.x, e.clientX) - r.left;
+  const y0 = Math.min(selStart.y, e.clientY) - r.top, y1 = Math.max(selStart.y, e.clientY) - r.top;
+  selRect.style.left = x0 + "px"; selRect.style.top = y0 + "px";
+  selRect.style.width = (x1 - x0) + "px"; selRect.style.height = (y1 - y0) + "px";
+});
+window.addEventListener("mouseup", (e) => {
+  if (!selStart) return;
+  const r = videoWrap.getBoundingClientRect();
+  const x0 = Math.min(selStart.x, e.clientX) - r.left, x1 = Math.max(selStart.x, e.clientX) - r.left;
+  const y0 = Math.min(selStart.y, e.clientY) - r.top, y1 = Math.max(selStart.y, e.clientY) - r.top;
+  selStart = null;
+  selRect.style.display = "none";
+  if (x1 - x0 < 24 || y1 - y0 < 24) return;  // too small to count as a selection
+  suppressClick = true;                      // suppress that click (avoid toggling play)
+  openRegionPanel(x0 / r.width, y0 / r.height, x1 / r.width, y1 / r.height);
+});
+videoWrap.addEventListener("click", (e) => {
+  if (suppressClick) { e.preventDefault(); e.stopPropagation(); suppressClick = false; }
+});
+
+// ---- Region panel ----
+// Crop the video frame's box region (normalized [x1,y1,x2,y2]) to PNG base64
+function cropBoxToB64(box) {
+  if (!video.videoWidth || !box) return "";
+  const c = document.createElement("canvas");
+  const vw = video.videoWidth, vh = video.videoHeight;
+  const outW = 640;
+  const outH = Math.max(2, Math.round(640 * ((box[3] - box[1]) / (box[2] - box[0]))));
+  c.width = outW; c.height = outH;
+  c.getContext("2d").drawImage(video,
+    box[0] * vw, box[1] * vh, (box[2] - box[0]) * vw, (box[3] - box[1]) * vh,
+    0, 0, outW, outH);
+  return c.toDataURL("image/png").split(",")[1] || "";
+}
+function openRegionPanel(bx0, by0, bx1, by1) {
+  regionBox = [bx0, by0, bx1, by1];
+  regionT = video.currentTime;
+  rpTime.textContent = "@" + fmt(Math.max(0, regionT - 2)) + "–" + fmt(regionT + 2);
+  rpNote.value = "";
+  rpPrompt.value = "";
+  rpResult.classList.add("hidden");
+  rpResult.textContent = "";
+  delete rpResult.dataset.answer;
+  rpSave.textContent = "💾 Save Spot";
+  regionB64 = cropBoxToB64(regionBox);
+  if (regionB64) {
+    rpPreview.src = "data:image/png;base64," + regionB64;
+    rpPreview.style.display = "block";
+  } else {
+    rpPreview.style.display = "none";
+  }
+  regionPanel.classList.remove("hidden");
+}
+function closeRegionPanel() {
+  regionPanel.classList.add("hidden");
+  regionBox = null; regionB64 = null;
+}
+async function analyzeRegion() {
+  if (!regionB64) {
+    rpResult.textContent = "Play/load the video first, then drag a region (current frame unavailable)";
+    rpResult.classList.add("err"); rpResult.classList.remove("hidden");
+    return;
+  }
+  const q = rpPrompt.value.trim() || "What is in this region? What can I attend to?";
+  rpResult.classList.remove("err");
+  rpResult.textContent = "🤖 Agent is analyzing the region…";
+  rpResult.classList.remove("hidden");
+  rpAnalyze.disabled = true;
+  try {
+    const r = await fetch("/analyze-region", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ image: regionB64, question: q, t: regionT }),
+    });
+    const d = await r.json();
+    if (d.ok) {
+      rpResult.textContent = d.answer;
+      rpResult.dataset.answer = d.answer;    // the analysis can be saved as the spot caption in one click
+      rpSave.textContent = "💾 Save Spot (with analysis)";
+    } else if (d.blocked) {
+      rpResult.textContent = "⚠️ " + d.error;
+      rpResult.classList.add("err");
+      const rb = document.createElement("button");
+      rb.className = "retry-btn"; rb.textContent = "🔄 Retry";
+      rb.onclick = () => analyzeRegion();
+      rpResult.appendChild(document.createElement("br"));
+      rpResult.appendChild(rb);
+    } else {
+      rpResult.textContent = "Error: " + d.error;
+      rpResult.classList.add("err");
+    }
+  } catch (err) {
+    rpResult.textContent = "Request failed: " + err;
+    rpResult.classList.add("err");
+  }
+  rpAnalyze.disabled = false;
+}
+function saveRegion() {
+  if (!regionBox) return;
+  const note = rpNote.value.trim();
+  const analyzed = rpResult.dataset.answer || "";
+  const label = note ? note.slice(0, 8) : "Manual Spot";
+  const savedT = regionT;
+  savedSpots.push({
+    id: Date.now() + "-r" + Math.floor(Math.random() * 1e6),
+    start: Math.max(0, savedT - 2),
+    end: Math.min(video.duration || savedT + 2, savedT + 2),
+    label: label, desc: note || analyzed, box: regionBox,
+    q: "", ts: Date.now(), manual: true,
+  });
+  saveSpots();
+  refreshSpotCount();
+  closeRegionPanel();
+  addMsg("dim", "Manual spot saved: \"" + label + "\" @" + fmt(savedT) + " (the blue box shows when playback reaches this time)");
+}
+rpAnalyze.addEventListener("click", analyzeRegion);
+rpSave.addEventListener("click", saveRegion);
+rpCancel.addEventListener("click", closeRegionPanel);
+
+// ---- Edit spot: right-click a spot -> "✏️ Edit Spot" -> edit caption/time, optionally ask AI and fill in ----
+const editPanel = document.getElementById("edit-panel");
+const epLabel = document.getElementById("ep-label");
+const epDesc = document.getElementById("ep-desc");
+const epStart = document.getElementById("ep-start");
+const epEnd = document.getElementById("ep-end");
+const epPrompt = document.getElementById("ep-prompt");
+const epResult = document.getElementById("ep-result");
+const epAsk = document.getElementById("ep-ask");
+const epFill = document.getElementById("ep-fill");
+const epSave = document.getElementById("ep-save");
+const epCancel = document.getElementById("ep-cancel");
+let editId = null;
+
+function openEditPanel(id) {
+  const s = savedSpots.find(x => x.id === id);
+  if (!s) return;
+  editId = id;
+  epLabel.value = s.label || "";
+  epDesc.value = s.desc || "";
+  epStart.value = s.start;
+  epEnd.value = s.end;
+  epPrompt.value = "";
+  epResult.classList.add("hidden");
+  epResult.textContent = "";
+  epFill.style.display = "none";
+  // jump to mid-range so the frame is correct when asking the AI
+  video.currentTime = Math.min(Math.max((s.start + s.end) / 2, 0), video.duration || 0);
+  video.pause();
+  editPanel.classList.remove("hidden");
+}
+function closeEditPanel() {
+  editPanel.classList.add("hidden");
+  editId = null;
+}
+async function askEditAi() {
+  if (!editId) return;
+  const s = savedSpots.find(x => x.id === editId);
+  if (!s) return;
+  const q = epPrompt.value.trim() || "What is in this region? What can I attend to?";
+  const b64 = cropBoxToB64(s.box);
+  if (!b64) {
+    epResult.textContent = "Current frame unavailable - cannot crop the region (play the video first)";
+    epResult.classList.add("err"); epResult.classList.remove("hidden");
+    return;
+  }
+  epResult.classList.remove("err");
+  epResult.textContent = "🤖 Agent is analyzing…";
+  epResult.classList.remove("hidden");
+  epAsk.disabled = true;
+  try {
+    const r = await fetch("/analyze-region", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ image: b64, question: q, t: video.currentTime }),
+    });
+    const d = await r.json();
+    if (d.ok) {
+      epResult.textContent = d.answer;
+      epFill.style.display = "inline-block";   // one click to fill the caption
+    } else if (d.blocked) {
+      epResult.textContent = "⚠️ " + d.error;
+      epResult.classList.add("err");
+      const rb = document.createElement("button");
+      rb.className = "retry-btn"; rb.textContent = "🔄 Retry";
+      rb.onclick = () => askEditAi();
+      epResult.appendChild(document.createElement("br"));
+      epResult.appendChild(rb);
+    } else {
+      epResult.textContent = "Error: " + d.error;
+      epResult.classList.add("err");
+    }
+  } catch (err) {
+    epResult.textContent = "Request failed: " + err;
+    epResult.classList.add("err");
+  }
+  epAsk.disabled = false;
+}
+function fillEditDesc() {
+  const t = epResult.textContent;
+  if (t && !t.startsWith("🤖") && !t.startsWith("⚠️") && !t.startsWith("Error") && !t.startsWith("Request")) {
+    epDesc.value = t;
+  }
+}
+function saveEdit() {
+  if (!editId) return;
+  const s = savedSpots.find(x => x.id === editId);
+  if (!s) return;
+  const st = Math.max(0, parseFloat(epStart.value) || s.start);
+  const en = Math.max(st, parseFloat(epEnd.value) || s.end);
+  s.label = epLabel.value.trim() || s.label;
+  s.desc = epDesc.value.trim() || s.desc;
+  s.start = st; s.end = en;
+  saveSpots();
+  refreshSpotCount();
+  const lbl = s.label;
+  closeEditPanel();
+  addMsg("dim", "Spot updated: \"" + lbl + "\" (" + fmt(st) + "-" + fmt(en) + ")");
+}
+epAsk.addEventListener("click", askEditAi);
+epFill.addEventListener("click", fillEditDesc);
+epSave.addEventListener("click", saveEdit);
+epCancel.addEventListener("click", closeEditPanel);
+</script>
+</body>
+</html>
