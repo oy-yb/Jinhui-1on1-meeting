@@ -1,0 +1,822 @@
+[Mingyuan Li] 10:00:52
+嗯嗯。
+
+[Mingyuan Li] 10:00:54
+Okay, um.
+
+[Yun] 10:00:57
+Okay?
+
+[Mingyuan Li] 10:00:58
+Okay, can i share my screen? And uh true.
+
+[Yun] 10:01:00
+妞妞也是。
+
+[Yun] 10:01:07
+I'd like to thank my students for joining this.
+
+[Mingyuan Li] 10:01:10
+Okay?
+
+[Yun] 10:01:16
+当然有。
+
+[Mingyuan Li] 10:01:16
+The customer. Yeah.
+
+[Mingyuan Li] 10:01:19
+So um.
+
+[Mingyuan Li] 10:01:23
+Uh today, i will give. I will present some my basic information, and three project on my future plan.
+
+[Mingyuan Li] 10:01:30
+Um, i believe, and i have a master student in data science and my research journey is, i explored and explore the process. I start a medical contribution where i know fundamental research and practices.
+
+[Mingyuan Li] 10:01:45
+Then moving into software engineering, where I get experience with end-to-end research and project leadership. Now my focus is on HCI. What has driven me throughout is that I want to find the right balance between
+
+[Mingyuan Li] 10:02:00
+And or the right compilation between science and engineering.
+
+[Mingyuan Li] 10:02:05
+Yeah, start with my second part of the research. It's an AOM chapel for program education.
+
+[Mingyuan Li] 10:02:10
+I built an OEM problem, intelligent children system for program education. During that time, the intern-based chatbots we're only used for adaptive learning, but no we're combined AOMs with visualization for educational purpose.
+
+[Mingyuan Li] 10:02:25
+So I designed an interaction pipeline that visualizes each axramatic step through interaction with an AOM.
+
+[Mingyuan Li] 10:02:32
+In this process, I learned to interpret a large open source React project and identify intervention points for novel ideas.
+
+[Mingyuan Li] 10:02:42
+After develop this system, I also co-designed questionnaires and conduct 2 pilot studies and 2 formal studies with over 100 students.
+
+[Mingyuan Li] 10:02:52
+Yeah, from the IDS project, I further conduct aid control experiments with
+
+[Mingyuan Li] 10:02:59
+330 students to study the equity vulnerability trade-off in structured visual AI for learning.
+
+[Mingyuan Li] 10:03:06
+I learned the survey data analysis pipeline, including EFA, CFA, and subsequent statistical analysis, and of course, I learned a lot to interpret relationships among the variables.
+
+[Mingyuan Li] 10:03:17
+And, uncover unexpected patterns and that can lead to the research insights and give contributing recommendations.
+
+[Mingyuan Li] 10:03:28
+And for the 3rd project. I lead this project this summer. You try to use interactive visual narratives to study how people enact their values in context.
+
+[Mingyuan Li] 10:03:39
+The motivation is that the self-report alone can leave a part of people reasoning unspoken, and the challenge is balancing meaningful context with experimental control.
+
+[Mingyuan Li] 10:03:50
+i'd3的framework，it三和research framework and build a React instrument.
+
+[Mingyuan Li] 10:03:57
+It turns research constructs into narrative scenarios that people make decisions and record their behavior. I also created an AI assistance workflow for transferable, which is very important because it's scaffold for user-friendly research.
+
+[Mingyuan Li] 10:04:12
+I refund the instrument throughout a pilot and redesigned a stimulated recall module to help participants explain their decisions.
+
+[Mingyuan Li] 10:04:21
+I think identify,
+
+[Mingyuan Li] 10:04:24
+makes method study according to understand when value hold or shift and why.
+
+[Mingyuan Li] 10:04:35
+So the contribution is reuseful framework and an instrument, and of course, guidance for developing HCI methodology to connect the behavior choices to interpretation.
+
+[Mingyuan Li] 10:04:48
+And lastly, I want to talk about my future research plans. Of course, the main track is human AI interaction or collaboration. Yeah, I believe the reason is very simple, because I think it's in the intersection between humans and machines, and between science and engineering.
+
+[Mingyuan Li] 10:05:08
+And so it's very flexible, and it gives me a room to approach a question from different angles. For example, the same problem can often be framed as a human-centered question or a technical question.
+
+[Mingyuan Li] 10:05:21
+I think for the PhD, I can choose the inter… interesting direction to pursue, or even extort both in parallel to gain deeper insight.
+
+[Mingyuan Li] 10:05:31
+Yeah, that's all.
+
+[Yun] 10:05:33
+Great. Thank you. Thank you for a brave, but also quite clear. I think.
+
+[Yun] 10:05:42
+So i would love to ask some quick question, what is the most challenging problem you have served through this project, and then how you addressed it?
+
+[Mingyuan Li] 10:05:46
+哼
+
+[Mingyuan Li] 10:05:52
+cool question, uh…
+
+[Mingyuan Li] 10:05:54
+I just used the time.
+
+[Mingyuan Li] 10:05:59
+I believe the big question is actually to find the right gap or the right…
+
+[Mingyuan Li] 10:06:08
+breakthrough point, I think that's really important, yeah, because I love to do research in a very inherited right way, so I want to do it in a very natural way.
+
+[Mingyuan Li] 10:06:20
+So…
+
+[Mingyuan Li] 10:06:21
+I think the very natural, so I believe the process is, like.
+
+[Yun] 10:06:21
+Very well.
+
+[Yun] 10:06:22
+嗯哼。
+
+[Mingyuan Li] 10:06:29
+We're not trying to solve the, find a research gap or present the research in a very
+
+[Mingyuan Li] 10:06:38
+Who is like a human-made way, so I want the gap or the solution we would try to present is very…
+
+[Mingyuan Li] 10:06:47
+It's very inherently reasoning.
+
+[Mingyuan Li] 10:06:50
+So…
+
+[Mingyuan Li] 10:06:51
+I solution is, like, a little bit like the… I think this solution will, throughout my research, is a little bit like the gradient descent
+
+[Mingyuan Li] 10:07:00
+So, for example, for this process, I will find the right gradient, like the related literatures, and with decent step-by-step very, and we try to…
+
+[Mingyuan Li] 10:07:14
+I need to identify the right gradient at that time, and
+
+[Mingyuan Li] 10:07:18
+And we go deeper in another step, and we refine the greeting again, and I believe throughout this process, I will get to the… at least the optimal solution that I can reach.
+
+[Yun] 10:07:32
+Okay, i i there's little bit jitters in the in, the in the in the audio. So my understanding, you saying is, you do not like.
+
+[Mingyuan Li] 10:07:32
+Yeah.
+
+[Mingyuan Li] 10:07:37
+Okay.
+
+[Yun] 10:07:43
+Very intuitively, or you want to.
+
+[Mingyuan Li] 10:07:45
+Oh, yeah, I want to do it in an intuitive way.
+
+[Yun] 10:07:49
+You. You want intuitive way. Okay, i think you want to. I think it's better to give me one example like there's a little bit abstract to me. I don't really understand this. So what is the give me an example that you feel like. Oh, it's very challenging. Thinking back.
+
+[Mingyuan Li] 10:07:51
+Yeah.
+
+[Yun] 10:08:04
+Is a challenging task, but you find a way to.
+
+[Yun] 10:08:08
+you know, work it out.
+
+[Mingyuan Li] 10:08:11
+Okay.
+
+[Yun] 10:08:13
+Yeah, just an example. It doesn't have to be… you don't have to synthesize. Just think about, like, what happened in the past. It could be… it could be…
+
+[Mingyuan Li] 10:08:17
+-H
+
+[Mingyuan Li] 10:08:20
+Oh, okay.
+
+[Yun] 10:08:23
+For example, you're talking about, like, identifying the right gap, right? How do you, like, how many gaps you have explored, and then eventually you feel like, oh, the others are not a good option, this one is. Why?
+
+[Mingyuan Li] 10:08:27
+Yeah, yeah.
+
+[Mingyuan Li] 10:08:35
+I see, I see.
+
+[Mingyuan Li] 10:08:39
+Yeah, I think for this, I can use another…
+
+[Mingyuan Li] 10:08:43
+Example is, like, expect to 2023, last time there's no powerful agents, there's, there's only ChatGPT, and
+
+[Mingyuan Li] 10:08:54
+When I try to…
+
+[Mingyuan Li] 10:08:57
+implement my ideas or my design into a design, existing large-scale React project.
+
+[Mingyuan Li] 10:09:08
+The project is very complex, and
+
+[Mingyuan Li] 10:09:11
+There's no help I can help you to understand the React code, and I think…
+
+[Mingyuan Li] 10:09:18
+I remember I tried to solve this problem through…
+
+[Mingyuan Li] 10:09:22
+I think I have to build a very basic React, React or TypeScript coding, coding skills and foundations.
+
+[Mingyuan Li] 10:09:32
+And then…
+
+[Mingyuan Li] 10:09:35
+I remember I used some search tools for the… to understand the whole project, to understand the code base, and
+
+[Mingyuan Li] 10:09:44
+I believe I intuitively right and try some intersection inserting points.
+
+[Mingyuan Li] 10:09:51
+And
+
+[Mingyuan Li] 10:09:56
+Then I think I will.
+
+[Mingyuan Li] 10:09:57
+Talkers my idea with my coworkers, and finally, I think the problem is solved.
+
+[Mingyuan Li] 10:10:05
+Yeah, during that, I believe that's…
+
+[Mingyuan Li] 10:10:08
+That's the only difficult part to, in a technical way to insert my design into the existing project. Yeah, that took me a lot of time during that time.
+
+[Yun] 10:10:21
+Okay Okay? Like, I guess you're not a PI, right? There's some other PI.
+
+[Mingyuan Li] 10:10:30
+Yeah.
+
+[Mingyuan Li] 10:10:37
+Yeah, sure, sure, sure.
+
+[Yun] 10:10:38
+Princess. And then, but you're the lead student, so…
+
+[Mingyuan Li] 10:10:40
+Yes, yes.
+
+[Mingyuan Li] 10:10:42
+Yeah, the things… yeah, I will talk, for this, for this project.
+
+[Yun] 10:10:44
+还可以啊。
+
+[Mingyuan Li] 10:10:51
+i co-design the question rear, and I…because it's for…it's in a control experience, so we have to present the…
+
+[Mingyuan Li] 10:11:00
+the system to the student in front of them, so it's in, you know, actually, it's in a real teaching scenario, it's in a course, so…
+
+[Mingyuan Li] 10:11:09
+act like a TA and the guide is a whole pipeline.
+
+[Mingyuan Li] 10:11:14
+And, yeah, I think for both of these projects, it's like… I'm the TA, and I co-designed the question rear, and
+
+[Mingyuan Li] 10:11:23
+I helped a student to do,
+
+[Mingyuan Li] 10:11:27
+To stay on the track.
+
+[Mingyuan Li] 10:11:28
+And
+
+[Mingyuan Li] 10:11:30
+lastly for this project, I…basically I write all the pension rear, the semester interviews, and uh…
+
+[Yun] 10:11:39
+Okay.
+
+[Mingyuan Li] 10:11:40
+I run the whole qualitative analysis, qualitative experiments all run by me, yeah.
+
+[Yun] 10:11:46
+Okay, so did you do the interview yourself? Did you lead the interview, or you, like, you design the interview product on someone else?
+
+[Mingyuan Li] 10:11:53
+Yeah, i i design i design it and I do the interview, yes.
+
+[Yun] 10:11:57
+Okay okay all right, students, do you have any questions, anything else?
+
+[Muawiz Khan] 10:12:03
+Um, yeah, i have a good question.
+
+[Muawiz Khan] 10:12:06
+I think it's related to the narra paper that we're on right now. Um. You mentioned that you we're the lead researcher in this one. Can you quickly explain to me like.
+
+[Mingyuan Li] 10:12:14
+Yes.
+
+[Muawiz Khan] 10:12:16
+How you came up with the idea like how you got the inspiration for this idea, and how you got the inspiration for the methodology as well.
+
+[Mingyuan Li] 10:12:21
+Oh yeah, good question.
+
+[Mingyuan Li] 10:12:24
+Yeah, good question, yeah, yeah, honestly…
+
+[Mingyuan Li] 10:12:28
+The funny thing is the…
+
+[Mingyuan Li] 10:12:33
+The core breakthrough…
+
+[Mingyuan Li] 10:12:36
+Yeah, honestly, it's come from my supervisor, Lu. Yeah, and what my role here is…
+
+[Mingyuan Li] 10:12:46
+It's like, I collect everything that I think is very interesting, and one of the interesting aspects is using the interactive visualties to, as a…
+
+[Mingyuan Li] 10:13:01
+Research framework to collect the human behavior data.
+
+[Mingyuan Li] 10:13:05
+And, yeah, that's only part of the… that's only one part of the… our very early…
+
+[Mingyuan Li] 10:13:13
+idea and the randomized supervisor, he this is very great, and yes, we…
+
+[Mingyuan Li] 10:13:21
+Which is one?
+
+[Muawiz Khan] 10:13:23
+Awesome. Just a quick follow up regarding this. Can you also extend me like um?
+
+[Muawiz Khan] 10:13:28
+Like your motivation behind choosing this line of research like, what more, if you to choose this research.
+
+[Mingyuan Li] 10:13:33
+Oh.
+
+[Mingyuan Li] 10:13:35
+Oh, yeah.
+
+[Mingyuan Li] 10:13:41
+Yeah, I think, yeah, very good question. I think this is, firstly, nobody do this sort of thing before, and for now, I think the… we are building on the AI-involving
+
+[Mingyuan Li] 10:13:56
+Era, and the way IA whole project is being,
+
+[Mingyuan Li] 10:14:02
+be user-friendly or so be transferable, or be actionable is because there's the image to model from the ChatGPT… from the OpenAI.
+
+[Mingyuan Li] 10:14:12
+Yeah, and we actually can do the visual narratives in a very quick way, not as before. People will need to find the designers, the people who deal with the animation, with the visualization, we don't need that, we can create
+
+[Mingyuan Li] 10:14:29
+create all of them through, through the… through a large model, and this is the technical part, and
+
+[Mingyuan Li] 10:14:39
+The second part, I think, or to approach this question, I just want to build a controlled experience scenario. It's like a sandbox, and I want it to be very intuitive, and it should be user-friendly, it should be… have some basic features that can
+
+[Mingyuan Li] 10:14:55
+Use for, instrument.
+
+[Mingyuan Li] 10:14:57
+Yeah, I think the visual narratives can actually meet all my leads.
+
+[Muawiz Khan] 10:15:03
+Alright, thank you.
+
+[Yun] 10:15:09
+Any other questions?
+
+[Yun] 10:15:15
+What are your background is you have computer engineering background, right? And also some other…
+
+[Mingyuan Li] 10:15:22
+Oh, yeah.
+
+[Mingyuan Li] 10:15:24
+Yeah, I'm from the, my bachelor is computer science, and my master is data science. I think basically it's in the…
+
+[Mingyuan Li] 10:15:38
+For my background, it's like the, I believe, like, the software engineering, programming, and my master is around the data science, the artificial intelligence, or the statistical methods.
+
+[Mingyuan Li] 10:15:50
+Yeah.
+
+[Yun] 10:15:53
+Okay.
+
+[Yun] 10:15:55
+What is, how long does one project like?
+
+[Yun] 10:15:59
+The one, the most recent one, or the one that you feel comfortable with, how long does it take from ideation to implementation to…
+
+[Mingyuan Li] 10:16:06
+Oh.
+
+[Yun] 10:16:08
+Run study, like, if you can give a little bit more detailed timeline. I know, like, that doesn't represent anything, but I just want to hear, like, what is the typical pro… yeah.
+
+[Mingyuan Li] 10:16:11
+Oh, sure.
+
+[Mingyuan Li] 10:16:17
+是是是，
+
+[Mingyuan Li] 10:16:20
+I honestly, I think the most interesting is the narrowframes, yeah, and
+
+[Mingyuan Li] 10:16:26
+I started the project to think about the ideas in late May, and I come out of the idea around the middle of the June, and I took with my supervisors and coworkers, and
+
+[Mingyuan Li] 10:16:41
+I think it's only about one week, and we decide to use that direction, and in the…
+
+[Mingyuan Li] 10:16:50
+You know, currently we have agents, so it's very, it's very for a prototype, very easy for prototyping. I think it only took me one week to give the 1st version of prototype, and
+
+[Mingyuan Li] 10:17:04
+I think 2 weeks to iterate the prototype.
+
+[Mingyuan Li] 10:17:08
+And, and I do the pilot.
+
+[Mingyuan Li] 10:17:12
+And the pilot took about… I think it's now a very big pilot, so it's only took me to prepare it for about 3 days, and I'll use 1, 1 day to do the pilot.
+
+[Mingyuan Li] 10:17:26
+And after the parallel, I just,
+
+[Mingyuan Li] 10:17:30
+I know the right direction to…
+
+[Mingyuan Li] 10:17:32
+I know what I want to design the main study. It took me, actually, a lot of time, and I think it's about 3 weeks, and then I run the main study. It took us about
+
+[Mingyuan Li] 10:17:48
+To less than 2 weeks, and I read the paper, write a paper about 2 weeks.
+
+[Mingyuan Li] 10:17:53
+Yeah.
+
+[Yun] 10:17:56
+Okay, so writing, you mean writing the paper or data analysis to present the results, how long does it take? Like, you collect the results, right?
+
+[Mingyuan Li] 10:18:02
+2
+
+[Mingyuan Li] 10:18:04
+Yes.
+
+[Yun] 10:18:05
+Like, how many students' results?
+
+[Mingyuan Li] 10:18:05
+Yeah.
+
+[Yun] 10:18:08
+dirty? Or, like, there is some… there is a larger number, like 100 students? I forgot something like that.
+
+[Mingyuan Li] 10:18:13
+Oh
+
+[Mingyuan Li] 10:18:15
+Yeah, these 2…
+
+[Mingyuan Li] 10:18:20
+Anything
+
+[Mingyuan Li] 10:18:22
+Yeah, honestly, I'm not very clearly remember the timeline, but I believe it took me…
+
+[Mingyuan Li] 10:18:31
+2 weeks?
+
+[Mingyuan Li] 10:18:31
+For this one, it's only less than 2 weeks, and for this one.
+
+[Mingyuan Li] 10:18:38
+CFA. I think it took me one month to get everything I need, and uh…
+
+[Mingyuan Li] 10:18:50
+Yes.
+
+[Yun] 10:18:52
+ok
+
+[Yun] 10:18:53
+Very productive. So, okay, I guess people use AI, to leverage AI a lot in this whole process. So in the past submissions, did you get
+
+[Mingyuan Li] 10:18:58
+-H
+
+[Yun] 10:19:06
+Rejections for the 1st submission, or you… you owe papers for, like, a 1st submission got in, and what is the…
+
+[Mingyuan Li] 10:19:13
+Oh, sure, sure.
+
+[Mingyuan Li] 10:19:15
+The, for this one, this, equitable one, it'll already be
+
+[Yun] 10:19:18
+哼
+
+[Mingyuan Li] 10:19:25
+I didn't present another project, it's about the…
+
+[Mingyuan Li] 10:19:31
+It's sort of empirical.
+
+[Mingyuan Li] 10:19:34
+experiments around the AI for software engineering tasks, and that paper gets reject by
+
+[Mingyuan Li] 10:19:44
+transaction on software engineering and the, um, I think there's another journal, yeah.
+
+[Mingyuan Li] 10:19:53
+I can reject those genres and will try to reframe that work. I think it's on my…
+
+[Mingyuan Li] 10:20:00
+On my website or my CV, yeah.
+
+[Yun] 10:20:04
+Okay. Alright, yeah, okay, that sounds great. Do other students have any questions?
+
+[Fatima Ali] 10:20:13
+Um i did that.
+
+[Yun] 10:20:13
+Do you have… yeah, yeah, yeah.
+
+[Fatima Ali] 10:20:14
+Yeah, i have a small question. Um.
+
+[Mingyuan Li] 10:20:14
+哼
+
+[Fatima Ali] 10:20:18
+It's honestly simple. I just say it was um interested to find out like what makes you excited about research.
+
+[Mingyuan Li] 10:20:30
+是。
+
+[Mingyuan Li] 10:20:31
+Yeah, I think…
+
+[Mingyuan Li] 10:20:37
+honestly, it's two levels, yeah, for a very…
+
+[Mingyuan Li] 10:20:43
+close part is like,
+
+[Mingyuan Li] 10:20:46
+Well, we are
+
+[Mingyuan Li] 10:20:50
+Yes, right? I know the research kind of brings me through things I can have a better career, I can get a publication. That's sort of the positive cycle that I want to approach. Yeah, that gets me excited, and
+
+[Mingyuan Li] 10:21:05
+For a deeper insight, it's like, for,
+
+[Mingyuan Li] 10:21:09
+For the… for a computer science research, I think
+
+[Mingyuan Li] 10:21:15
+啊，上好。
+
+[Mingyuan Li] 10:21:16
+I want to solve a…
+
+[Mingyuan Li] 10:21:19
+Maybe a real world problem that I can really interfere the world, I can really understand the world, and
+
+[Mingyuan Li] 10:21:27
+I can contribute to the computer science community.
+
+[Mingyuan Li] 10:21:33
+Yeah, that's really made me…
+
+[Mingyuan Li] 10:21:36
+Yeah, that's sort of a value, give me some excited.
+
+[Mingyuan Li] 10:21:39
+Yeah.
+
+[Fatima Ali] 10:21:41
+Yeah, thank you. Thank you so much.
+
+[Yun] 10:21:44
+It sounds a little bit, I mean, it sounds to me a little bit more, like, official language. You know, I, I wonder if you have more personal, like, in a sense, to me, like.
+
+[Mingyuan Li] 10:21:46
+-H
+
+[Mingyuan Li] 10:21:54
+Yeah, okay.
+
+[Yun] 10:21:58
+Yeah, I can say I want to contribute to the HCI community. It's more like I'm giving a talk to students, I can say that. Right, I want to hear more something very organic. Like, say, in a sense.
+
+[Mingyuan Li] 10:22:05
+ok.
+
+[Yun] 10:22:10
+Yeah, something your hobbies or something like your personal, like, people, like, the purpose of me bringing the lab to this meeting is also, like, this could be your potential teammates, right? They want to know a little bit about your personality.
+
+[Mingyuan Li] 10:22:26
+ok, I see.
+
+[Yun] 10:22:27
+yeah, like, who you are, things like that, yeah.
+
+[Mingyuan Li] 10:22:31
+Yeah, and the question is still around my research. It's a little bit of my research hobby, right? My…
+
+[Mingyuan Li] 10:22:39
+Yeah, so…
+
+[Mingyuan Li] 10:22:50
+Honestly, I…
+
+[Mingyuan Li] 10:22:56
+I think I don't have seen too much, I just want to…
+
+[Mingyuan Li] 10:23:07
+Let's just see for now, I just want to do something…
+
+[Mingyuan Li] 10:23:12
+That can make some impact.
+
+[Mingyuan Li] 10:23:15
+Yeah, and
+
+[Mingyuan Li] 10:23:19
+for example, for when you build a system, and we do a pilot, or we, or we only do a main study.
+
+[Mingyuan Li] 10:23:30
+And, our prototype are actually…
+
+[Mingyuan Li] 10:23:36
+interfere the… by participants are somehow, and all the experiments actually have some…
+
+[Mingyuan Li] 10:23:45
+impact to them, or to…
+
+[Mingyuan Li] 10:23:48
+certain group of people.
+
+[Mingyuan Li] 10:23:49
+That would… that sort of impact, I know that's very small, but I think that really make me excited.
+
+[Yun] 10:23:57
+Okay, yeah. Okay, I think this is good, if,
+
+[Mingyuan Li] 10:23:59
+Yeah.
+
+[Yun] 10:24:05
+Do you have any questions for us? Maybe one question? Quick question for us?
+
+[Mingyuan Li] 10:24:09
+Okay okay说说。
+
+[Mingyuan Li] 10:24:12
+Yeah, I'm a little bit confused, which program should I apply the informatics, the information size, or computer science?
+
+[Yun] 10:24:20
+So the difference is, for computer science, you will need, I think, Fedman and Moas are from computer science. You would need at least 2 or 3 faculties to advocate your case, I think.
+
+[Yun] 10:24:33
+And then, I'm not a, like.
+
+[Mingyuan Li] 10:24:33
+哼
+
+[Mingyuan Li] 10:24:36
+Yeah.
+
+[Yun] 10:24:37
+100% of CS faculty, and my homeschool is iSchool, so I need to find at least 2 other
+
+[Mingyuan Li] 10:24:41
+Yes, I don't.
+
+[Yun] 10:24:47
+Faculty to support your case, and even that, I'm not sure, like, I don't know, like, sometimes they have some, I don't know, like, I haven't tried too much, but I know, like, a lot of high school faculty actually hire a lot from
+
+[Yun] 10:25:01
+CS. So that's 1. You can definitely try there. Informatics is more, we have O-young from Informatics. Informatics is more like
+
+[Yun] 10:25:14
+How to say, they don't guarantee or find, like, when they provide the letter, they don't guarantee the finding, but we never hear any student short of finding. Like, we always can help them to get funding, like, you know, once they come to the program.
+
+[Yun] 10:25:30
+In informatics, the unique strength of informatics is across the whole campus, so
+
+[Yun] 10:25:36
+And the courses I remember, if I'm correct, the courses requirements are very, very flexible, so you can take any courses on campus, and then the minimum, you know, qualification for PhD is also much more flexible.
+
+[Yun] 10:25:53
+And the way how we get in students, also much more flexible compared to other programs. We don't need too many faculties to say yes. We're more like, if there is a good faculty to
+
+[Yun] 10:26:06
+Advocate the case, there is likely to get in.
+
+[Yun] 10:26:10
+The 3, rd I school also have a more rigid review process, and iSchool also have some, yeah, like, at least oral, sometimes inter, like, oral interview like this, they're gonna be 2 faculty, 2 or 3 faculties, maybe, interviewed.
+
+[Yun] 10:26:28
+And sometimes the 1st pass, like, if there are, like, at least 2 faculty have to be interested in your application, and also sometimes because they may feel like, oh, this is not a very good fit for the iSchool program, because maybe
+
+[Yun] 10:26:46
+There are topics, for example, some students are very, like, hardware-oriented in the past, then the school feel like, oh, we don't have any faculty working on hardware, right? So then they may not include that. So it's really hard to, yeah, sometimes it's hard to get in, because not perfect. Sometimes it's perfect fit, like, everybody feels like that topic is familiar, but
+
+[Mingyuan Li] 10:26:57
+Yeah.
+
+[Yun] 10:27:09
+Also, because of that, they feel like, compare this person with the other one, we feel like this one is not that strong. So, so really hard to tell, like, people have very different tastes.
+
+[Yun] 10:27:20
+So, yeah.
+
+[Mingyuan Li] 10:27:20
+Yeah.
+
+[Yun] 10:27:22
+Yeah.
+
+[Mingyuan Li] 10:27:24
+Yeah, yeah, I think the… so I should apply for the Computer Science and the Machine Your Lame.
+
+[Mingyuan Li] 10:27:33
+Like, or the information size on the machine learning.
+
+[Muawiz Khan] 10:27:34
+啊，什么事。
+
+[Yun] 10:27:35
+Well, if you want to work with me, definitely mention my name in your application across whichever program you want to apply, right? But even sometimes informatics, like, we see good students, even we don't see the students. Like, I know some other faculty does that, like, if they see good students, they don't see the name match, they still feel like, oh, I want this student, they take that.
+
+[Mingyuan Li] 10:27:44
+Yeah.
+
+[Mingyuan Li] 10:27:48
+Okay.
+
+[Yun] 10:27:56
+So, yeah, but I really did that, yeah.
+
+[Mingyuan Li] 10:27:57
+Okay.
+
+[Yun] 10:28:02
+okay? Yeah. We can, we can, you can email me offline, but we won't be mindful about time. Thank you so much.
+
+[Mingyuan Li] 10:28:02
+Okay. Yeah.
+
+[Mingyuan Li] 10:28:06
+Okay.
+
+[Mingyuan Li] 10:28:09
+Sure, sure, sure, sure, thank you.
+
+[Yun] 10:28:10
+Thank you!
+
+[Mingyuan Li] 10:28:11
+Thank you.
+
+[Yun] 10:28:12
+0
+
+[Yun] 10:28:13
+Mingyuan, right?
+
+[Mingyuan Li] 10:28:14
+Yes, yes, yeah.
+
+[Yun] 10:28:15
+M
+
+[Mingyuan Li] 10:28:17
+Yeah.
+
+[Mingyuan Li] 10:28:20
+Hi, thank you.
+
