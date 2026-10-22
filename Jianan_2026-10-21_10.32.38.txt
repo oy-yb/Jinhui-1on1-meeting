@@ -1,0 +1,567 @@
+[Jianan Jiang] 10:02:11
+So. Hello, my name is john and john. And uh, i'm currently a researcher system at the pen state university and today's talk he was enter the model intelligence from jerry to interactive and body system.
+
+[Jianan Jiang] 10:02:17
+So, I will introduce from I will introduce myself, and then I will introduce my research experience, and finally, I will make a conclusion about my previous research, and I will discuss about my future interest.
+
+[Jianan Jiang] 10:02:34
+So, my name's John Ann, and I have a strong interdisciplinary research background, and I received my BE degree in mechanical engineering from Dong Hua University, and I am a degree in design science from the Hyunan University.
+
+[Jianan Jiang] 10:02:50
+I have received several honors, such as some outstanding graduates and the outstanding academic master's thesors.
+
+[Jianan Jiang] 10:02:59
+And here are some of my awards during, I received during my undergraduate studies. And so far I have published 10 papers with one Best Paper Award from the CSCW Conference.
+
+[Jianan Jiang] 10:03:14
+So let's move on to my research experience.
+
+[Jianan Jiang] 10:03:19
+I organize my experience into 2 areas. 1st is my engineering research during my undergraduate study, and the computing, research during my master's and current research.
+
+[Jianan Jiang] 10:03:35
+So first, st I will introduce my undergraduate's engineering research.
+
+[Jianan Jiang] 10:03:42
+So 1st project is about the robot, he further textile industry, and it's my major work during my undergraduate study. So, you know, China occupied half of the textile expert, value, and there's 1 essential, but
+
+[Jianan Jiang] 10:03:58
+啊哈佛and it's still performed manually. So our goal is, uh, our goal is to achieve the automated, uh, broken yard joining, and at that time, there's only one.
+
+[Jianan Jiang] 10:04:14
+commercial solution by still have some limitations. So, our teamwork on this problem for 2 years, so we introduced our inspection robot for the broken yard location and our joint robot for the broken yard join.
+
+[Jianan Jiang] 10:04:31
+And also a website for the monetary and the system coordination.
+
+[Jianan Jiang] 10:04:36
+And so their, main challenge of this project is how tier to their millimeter level operation accuracy. So, you know, the ER is very small, so it's really easy to break. We need to coordinate the rubber to
+
+[Jianan Jiang] 10:04:53
+啊，finish several sequential operations, so we designed several algorithms and mechanic structures to handle the ER.
+
+[Jianan Jiang] 10:05:10
+So finally we have made a great achievement. Our solution has passed the National Technical Achievement Appraiser, and we received cell patterns and copyrights, and this project also recommended by 2 members, Chinese Academy of Engineering.
+
+[Jianan Jiang] 10:05:23
+And we have some collaborations, we got some collaborations with the industry-leading enterprises, and their follow-up work was also awarded in the National Science and Technology Awards ceremony.
+
+[Jianan Jiang] 10:05:37
+So, the second project is about the energy-saving vehicle. So we work on the vehicle frame, body, aerodynamics, lightweight materials, and system integration, and we finally take the vehicles for the national competitions.
+
+[Jianan Jiang] 10:05:54
+And here, I work on a range of hand-on projects, so…
+
+[Jianan Jiang] 10:06:01
+This experience provide me solid foundation for my current work to build a practical system.
+
+[Jianan Jiang] 10:06:12
+Then I will move on to my master's and current research. So, the 1st project is about Human-centered, generative AI, especially for the generated AI for fashion designers. First, st I will introduce the
+
+[Jianan Jiang] 10:06:28
+traditional design process, so designers has 4 steps. First, st they need to get some inspirations from their online resources, and then they will sketch out their ideas, and then they will refine their sketches to, over and over again.
+
+[Jianan Jiang] 10:06:47
+Finally, they we're coloring their sketch.
+
+[Jianan Jiang] 10:06:50
+So, in our preliminary, user study, we found that there have several challenges. First, st search online could return a lot of irrelevant results, so this could be led to a, no design efficiency, and at that time, the AI generation method, always knows some
+
+[Jianan Jiang] 10:07:13
+important design details like here, like here, the scheduling or the sketch calorie.
+
+[Jianan Jiang] 10:07:22
+So, our keen, question is how to improve the design efficiency and also the design quality with the generative AI.
+
+[Jianan Jiang] 10:07:33
+So, we introduced our human AI collaborative design system that can support the whole design workflow, so designers can get inspirations, and they can work on their sketches, and finally they can explore different
+
+[Jianan Jiang] 10:07:53
+啊，calorie styles within the same system.
+
+[Jianan Jiang] 10:07:58
+And here are the architecture and the algorithm details of our system. And here is the performance of our system.
+
+[Jianan Jiang] 10:08:11
+besides, I also work on other related works, uh, such as how to capture which designer's unique sketch, uh, sketch style, and how to support collaborative work among different designers across locations or devices.
+
+[Jianan Jiang] 10:08:29
+And how to generate, love our sketch style while protecting privacy.
+
+[Jianan Jiang] 10:08:38
+Those second research branch, I focus on either underlying models, especially the multimodel representation learning. So, the 1st project about the fine grade sketch-based Image Retriever.
+
+[Jianan Jiang] 10:08:54
+And we know that vision transformer are widely used for vision tasks, but they are usually discard the patch tokens, so our question is that how are these discarded patch tokens useless?
+
+[Jianan Jiang] 10:09:08
+So, in our work, we prove that these patch tokens are useful, so we use a contrastive learning to recycle this discarded patch tokens to get a better future representation. And finally, we improve the, image retrieval performance.
+
+[Jianan Jiang] 10:09:28
+And another is about the sketch to image translation, so it's kind of like a sketch to image generation work, so we take, we took the, inspiration from the humans perception.
+
+[Jianan Jiang] 10:09:44
+So, you know,
+
+[Jianan Jiang] 10:09:48
+You'll know no matter which perspective a human looks at a same image, they could get a similar result, so we represent the sketch as sequences, and also to encourage the
+
+[Jianan Jiang] 10:10:04
+consistency across different sequence directions, so it also can improve their future representation. And finally, we improve their, image generation, quality.
+
+[Jianan Jiang] 10:10:19
+Besides, I also work on the EG-based image generation and image-based video generation for the virtual trial own.
+
+[Jianan Jiang] 10:10:32
+So more recently, I have explored the generative AI, especially the native language model for the interactive and embodied system.
+
+[Jianan Jiang] 10:10:44
+So, here is our recently, recent work which was accepted to the UST 2026. So, the keen question of, this is how to achieve or expressive and controllable also in XR.
+
+[Jianan Jiang] 10:11:01
+So, the background is that the previous method, or the traditional method, they are mainly focused on the object level or the scene level generation. So, even with, a very small changes, we need,
+
+[Jianan Jiang] 10:11:19
+We need always,
+
+[Jianan Jiang] 10:11:21
+regenerating the full object, the whole object, and the second is that, we know that the human language, are ambiguous, so it's easy for the system to misunderstand their user's intent.
+
+[Jianan Jiang] 10:11:37
+And finally is that the traditional improved method, the generation and their editing, these 2 stages are often separate, so this could limit, this could limit the continuous refinement.
+
+[Jianan Jiang] 10:11:52
+So, based on these limitations, we moved the generative AXA beyond seen level and object network through the part of well generation.
+
+[Jianan Jiang] 10:12:06
+And the fine-grained are posteration, interaction.
+
+[Jianan Jiang] 10:12:11
+So, in this way, users can input speech or insider sketches, or have that captured images to, our system. So our system will foster
+
+[Jianan Jiang] 10:12:27
+users intent, and then generate part structures through the objects, and finally, users can interact with their, components of their, 3D objects.
+
+[Jianan Jiang] 10:12:46
+After generation, I was wondering, so can we move beyond statistics or the object authoring? So nowadays, we, we have access to diverse, 3D assets.
+
+[Jianan Jiang] 10:13:00
+So they could either generate it from 3D generation models, or they could download it from their online resources.
+
+[Jianan Jiang] 10:13:13
+this is often make semantic neighbors and existing XR animation methods, they typically animate at their object level, or they, they all,
+
+[Jianan Jiang] 10:13:27
+Or often triggers are pretty defined motions, so this could limit their application for real world. So…
+
+[Jianan Jiang] 10:13:37
+For this project, the King, research question is how to translate users' high-level intent into plausible and coordinated object-level and part-level motions for, such semantically unlabeled and part-structured CD, objects.
+
+[Jianan Jiang] 10:13:56
+So…
+
+[Jianan Jiang] 10:13:58
+We proposed an animation system that can generate executable animations for, these 3D assets from, natural language instruction. So these assets could either.
+
+[Jianan Jiang] 10:14:15
+generated by 3D generation models, or they could also download it from the online resources.
+
+[Jianan Jiang] 10:14:24
+Besides, I also worked or finished one survey paper, the,
+
+[Jianan Jiang] 10:14:31
+about their XI intelligence.
+
+[Jianan Jiang] 10:14:36
+During the past year, I have participated in 2 projects. 1st is a DAPA projects about the collaborative search and rescue, security. Another is the NSF project about the adaptive firefighter training.
+
+[Jianan Jiang] 10:14:52
+So, now let me bring, this experience together and talk about my future interest.
+
+[Jianan Jiang] 10:15:01
+So, looking back, I worked on the engineering and robotics generative AI for fashion design, multimodel representation learning, and the interactive and embodied AI. So…
+
+[Jianan Jiang] 10:15:16
+My research has gradually moved from the building intelligence system to understand how people can interact with and control multi-model AI.
+
+[Jianan Jiang] 10:15:29
+And here, I presented a representative human AI interaction, paradigm, so…
+
+[Jianan Jiang] 10:15:38
+I can reason about human-related multimodal signals, and then,
+
+[Jianan Jiang] 10:15:48
+And then with the human-centered interaction technologies, this could support both virtual and physical applications. So, in this way, the AI system can connect their perception, reasoning, and action around, the users.
+
+[Jianan Jiang] 10:16:12
+So building on this paradigm and my previous work, I want to focus on 2, closely connected research question.
+
+[Jianan Jiang] 10:16:23
+The 1st is from the JerryTM model side, so how can small model can adapt to each user while running efficiently on everyday devices, and also from the interaction side, how can we keep users in control of
+
+[Jianan Jiang] 10:16:43
+When AI steps in and how it helps.
+
+[Jianan Jiang] 10:16:48
+So that's all of my today's, presentation. Thank you so much for your listening. And if you have any questions, be feel free to ask me, yeah.
+
+[Yun] 10:17:01
+Yeah。Thank you。嘉南ya students do you have any questions。
+
+[Yun] 10:17:07
+Uh pay you uh sorry may. Maybe we can um? You can join a little bit later. This is our internal meeting. Sorry. But yeah.
+
+[Yun] 10:17:17
+Ah, i think you can let pay it now when when we are ready.
+
+[Wanqing Ma] 10:17:21
+Yeah. Okay.
+
+[Yun] 10:17:22
+Okay?
+
+[Yun] 10:17:22
+Okay, yeah. Yeah. Uh how how you guys think about like. Do you have any questions? Anyone have any questions? I think the waste of paper. And uh whatever the work you presented after um, the xr. Which, very relevant to our lab especially. You're going to waste the right. I'm going to go there, too.
+
+[Jianan Jiang] 10:17:43
+Yeah.
+
+[Yun] 10:17:43
+Okay, so we'll definitely meet in person there, yeah. Right, so I guess, I guess this is very impressive you have so many, researchy
+
+[Jianan Jiang] 10:17:45
+I ok
+
+[Yun] 10:17:53
+experiences, especially with physical objects and, more like tours in physical AI.
+
+[Yun] 10:18:01
+I guess my quick question is, how did you develop a research question? Like, what…
+
+[Yun] 10:18:10
+You have several 1st author's paper, right? And then taking the lead, what is your… how did you develop the research question? What is a typical life cycle of a project? Like, I mean life cycle is the time
+
+[Jianan Jiang] 10:18:13
+Yeah.
+
+[Yun] 10:18:26
+you know, starting, like, research ideation part, how much time you spend on research ideation. Well, of course, like, with physical AI or something, that is different from, purely software, right? Like, XR stuff.
+
+[Jianan Jiang] 10:18:39
+Yeah, yeah, yeah, yeah.
+
+[Yun] 10:18:41
+Yeah, like, maybe you have a different timeline. I just want to hear a little bit about that, and then how you handle rejection.
+
+[Yun] 10:18:51
+How you handle rejection in the sense, like, yeah, I'm just curious about this, yeah.
+
+[Jianan Jiang] 10:18:56
+Yeah, yeah. So, first, st first, st during my undergrade study, so I spent a lot of my time for the, research, so, during my freshman year, I, joined, joined a club.
+
+[Jianan Jiang] 10:19:14
+of my professor and participate in several, objects, and my professor, teach me how to research, and
+
+[Jianan Jiang] 10:19:25
+And during masters, so, I think my work is mainly focused on the GRTI, so, so at the beginning, I, work on the algorithm aspects, but,
+
+[Jianan Jiang] 10:19:40
+There is no output, and I have rejected by many conferences, so I choose to use the JerryT AI for the fashion design. So it's an application level, so I moved from the algorithm aspect to the application.
+
+[Jianan Jiang] 10:19:56
+Aspect, so that's my, 1st paper, my first, st my 1, st 1st or 3, rd paper is hygiene, so it's accepted that you become 2026, so it's my second year of my master's, study.
+
+[Jianan Jiang] 10:20:11
+Yeah, and after I finished the application level, application level paper, so I focus on the algorithm aspects. So that's the reason I published the AAAI conference, and also the.
+
+[Jianan Jiang] 10:20:29
+Actually transaction on artificial intelligence, journal. So, originally, I work on the algorithm aspect, and then I move on to the, both the application level and also the algorithm level.
+
+[Yun] 10:20:44
+Okay.
+
+[Jianan Jiang] 10:20:44
+And currently, I…
+
+[Jianan Jiang] 10:20:47
+It's kind of is also the application level because, you know, large language model is very powerful, so… and my current lab is work on the XR, so I was wondering how to leverage the native language model capability to… into the XR, so that's the reason I, come up with the idea of the fine-grained control.
+
+[Jianan Jiang] 10:21:10
+fine-grained the company level interactions, uh, the part interact with this paper, and also, uh, after that, I was wondering how to net these objects move, uh, so beyond the static, so that's the idea of the motion animator. So I think these, uh, papers are
+
+[Jianan Jiang] 10:21:30
+Interconnected yeah.
+
+[Yun] 10:21:31
+Okay, yeah, did I, did you finish all my questions? I forgot if I have asked. I feel like I was asking, uh, the life cycle. How long, how long does it take for one paper? Let's say the XR paper or some other paper?
+
+[Jianan Jiang] 10:21:39
+And another question, yeah, yeah, I'm not…
+
+[Jianan Jiang] 10:21:47
+Excel table, I think it takes, 3 to 5 months, yeah.
+
+[Yun] 10:21:55
+Okay, okay, so the whole, like, ideation plus development plus user study, IRB, everything together?
+
+[Jianan Jiang] 10:22:03
+Yeah, yeah, yeah. So, because, like, the motion animator, so it's based on the pod interactor, so we already have our system. So at the beginning, for the pod interactive system construction, it cost a lot of time.
+
+[Jianan Jiang] 10:22:19
+把把把native animator的system development can have less time for the development. Uh, so…
+
+[Yun] 10:22:28
+Did you run the user study? Did you design the users? Okay.
+
+[Jianan Jiang] 10:22:29
+I see…
+
+[Jianan Jiang] 10:22:30
+Yeah, yeah, yeah, yeah, yeah. So, most of the user studies are finished in one month.
+
+[Jianan Jiang] 10:22:36
+Yeah.
+
+[Yun] 10:22:36
+Okay, good, good. Okay, how about your data analysis? How, from what, I mean…
+
+[Yun] 10:22:43
+以waste paper is a little more system oriented still, so it's more about, you know, how people respond to your algorithm, things like that, your novel interaction design. So, uh, yeah, how did…is this your first user experience paper, or not?
+
+[Jianan Jiang] 10:22:59
+for the UBICA, I also conducted user studies, yeah.
+
+[Yun] 10:23:02
+Oh, yeah.
+
+[Yun] 10:23:04
+Okay, okay. Yeah, Fasmer, do you have any questions? Feel free to ask.
+
+[Fatima Ali] 10:23:10
+Okay, uh yeah, i have a few questions. Um. I was wondering your first kai paper that you this style me paper. You're like the first author, and you have decided um to work on the fashion. Design problem, right.
+
+[Fatima Ali] 10:23:27
+And i was just interested in figuring out because you're the first auto as well like, why did you specifically focus on our choose fashion design as the main focus of the paper like. Do you have any prior experience or previous motivation for choosing this topic?
+
+[Yun] 10:23:42
+Yeah.
+
+[Yun] 10:23:43
+By the way, the 1st kai paper, I don't think he is the 1st author. It looks like there are 3 other people, the 1st author.
+
+[Jianan Jiang] 10:23:46
+Yeah, yeah, I'm not the 1st author, yeah. Yeah, yeah.
+
+[Fatima Ali] 10:23:50
+okay okay
+
+[Yun] 10:23:51
+But anyway, it's a good question. Yeah, what is your role in that project?
+
+[Jianan Jiang] 10:23:51
+And they, the…
+
+[Jianan Jiang] 10:23:56
+because as I said before, I mainly works on the algorithm aspect, so I develop the game model, the, the, the, the generative AI model, so I use this model for the.
+
+[Jianan Jiang] 10:24:13
+Applications for the fashion design applications. And by the way, the why we focus on the fashion design? Because we have a project related to the fashion design, so yeah.
+
+[Yun] 10:24:24
+Okay.
+
+[Fatima Ali] 10:24:24
+Okay, yeah, yeah, that makes sense. And I think just, like, another question, like, because Professor also asked about the research cycle and what stages, there are, I was also wondering which stages in the research cycle
+
+[Fatima Ali] 10:24:40
+Do you feel like you struggle with, like, currently? And I think that you have a really good experience with research, so I was also wondering, like, which parts do you feel like…
+
+[Yun] 10:24:48
+Good question.
+
+[Fatima Ali] 10:24:51
+You have a bit of a difficulty with, and then, you know, what parts would you want to learn more or polish in your, during your actual, like, your PhD?
+
+[Yun] 10:25:01
+Yeah, now I understand why I want to invite my lab members here, right? They have great questions better than mine. Okay, go ahead.
+
+[Jianan Jiang] 10:25:02
+1
+
+[Jianan Jiang] 10:25:08
+Okay, so I think the most, difficult part is the…
+
+[Jianan Jiang] 10:25:16
+software and the hardware called design, yeah, so you need to develop the system and also a very stable system for the user study.
+
+[Jianan Jiang] 10:25:27
+And we need conducting a lot of the sandboxing studies before the formal user studies, so I think this is a little difficult for me because I need to revise the system over and over again until it is very stable for the
+
+[Jianan Jiang] 10:25:45
+有users to conduct a formal use study, yeah. And it cost most of my time, I think, yeah.
+
+[Yun] 10:25:54
+Okay, so…
+
+[Jianan Jiang] 10:25:54
+And the idea, ideation is easy for… it's quite easy, yeah, to come up with.
+
+[Yun] 10:26:02
+Okay. So it's the design, the software, hardware, like, kind of alignment or, putting it together. How do you, how do you overcome the difficulty, then? I think we don't have a lot of time, but I want to be mindful about that. Yeah, how could you overcome the difficulty?
+
+[Jianan Jiang] 10:26:21
+just spend time, I think, yeah. Spend more time on that, yeah.
+
+[Yun] 10:26:26
+How do you use AI to solve the problem? Did you try to use AI?
+
+[Jianan Jiang] 10:26:30
+Sure, sure, sure. I use the AI to help me to write code, yeah.
+
+[Yun] 10:26:38
+Okay, so does AI give you any idea, like, to solve the problem, like, the software-hardware problem?
+
+[Jianan Jiang] 10:26:45
+They can help me to solve some bugs, their, their, the development bugs, yeah.
+
+[Yun] 10:26:53
+Okay, so it's not as ideal as just software development, you're saying, because right now, from software perspective, it's kind of automated, you know, very pretty automated, reliable now.
+
+[Jianan Jiang] 10:26:58
+Yeah, yeah, yeah.
+
+[Jianan Jiang] 10:27:04
+Yeah, yeah, yeah.
+
+[Yun] 10:27:05
+Okay, okay. Alright, do you have any question for us? Maybe one question, then we'll have to move on with another meeting, yeah.
+
+[Jianan Jiang] 10:27:14
+Okay okay
+
+[Yun] 10:27:17
+Do you have any questions for us?
+
+[Jianan Jiang] 10:27:19
+So, one quick question about your current research topics, yeah.
+
+[Yun] 10:27:26
+Oh, my current research topic. So right now…
+
+[Jianan Jiang] 10:27:28
+Yeah, yeah, yeah.
+
+[Yun] 10:27:29
+I think we have every student's kind of, like, working on their primary interest a little bit differently, but it's all about human AI co-creation, human AI interaction design, collaboration design.
+
+[Yun] 10:27:44
+So we want to find where, let's say AI is more powerful, right? But eventually, we want to empower humans, empower end users, people. So, what is the… when, under what context we should design AI, like.
+
+[Jianan Jiang] 10:27:54
+是。
+
+[Yun] 10:28:02
+It cannot.
+
+[Yun] 10:28:03
+Overwrite our agency, right? Our ownership. So I think that's 1 of the major, primary goals, but also, like, how when AI as agent mediating human-human interaction, what
+
+[Yun] 10:28:18
+could be what can go wrong. But I think this is kind of traditional human AI interaction in UI, in HCI space already. The reason why I'm very interested in your work is because I believe, and also why Ouyang is joining our lab.
+
+[Jianan Jiang] 10:28:34
+Yeah.
+
+[Yun] 10:28:34
+is, I believe there is a huge space for XR, for AR, and also for multi-sensor coordination. So I really hope our team can open that door a little bit wider, in the sense
+
+[Yun] 10:28:49
+Working more probably in that space. For example, Wanqian and Ouyang is working on video analysis with children, you know, like, recording children interaction with teachers, so that we can really see the boundaries of
+
+[Yun] 10:29:04
+current visual language model, how much they can understand the social context, but then there still are two-dimensional, right? Like, it's a video, but then gradually, we want to move to the 3 space. And then, Fedma and another student, Moas, they're working on, like, multi-agent, like, multi-model, like, agent…
+
+[Yun] 10:29:25
+Kind of support proactive support. So, again, the 1st application is still in, like, two-dimensional space, like data analysis, like AI support data analysis, like AI agent.
+
+[Yun] 10:29:36
+So, under what context do you want proactive AI to support you, under what context you want it to mute, right, to be silent, and then the data control is all kinds of, like, control layer, governance layer. So, I also think the next wave is moving into the physical space.
+
+[Yun] 10:29:54
+We haven't been there much, but I really think that's the next wave, and I'm hoping Fatima's team can also, like, work at your pace, like, 3 months of paper, 3 or 4 months of paper, can speed up. I think they're on the right track right now.
+
+[Jianan Jiang] 10:29:55
+Yeah, Corey.
+
+[Yun] 10:30:10
+Yeah, and also, I feel like, AI for science is another major thing, but again, AI for science is 2 dimensions still, right? So I think, right now we're more talking about multi-agent support for scientific discovery, but if you look at class science, you know, anti-gravity has a new
+
+[Yun] 10:30:30
+I think they're gonna have a new platform fully released for scientific discovery. We're, like, applying for the better version or something, and I think there are a lot of, also, efforts from OpenA, from all these AI companies. AI for science is another major one.
+
+[Yun] 10:30:46
+But, again, we want to move beyond the digital space. I want… I think there are going to be a science in the physical space, like physical AI. That's why, actually, I created this app for, you know, conference attendees. Yesterday, I put waste paper, waste
+
+[Yun] 10:31:02
+啊，system there, and the data there. And I feel like, uh, the first that they actually recommend my own system actually recommended me is physical AI, which is very interesting. I don't know why they knows my interest, but if you go to this website.
+
+[Jianan Jiang] 10:31:16
+Okay.
+
+[Yun] 10:31:19
+And I log in using… you should be able to log in using your Penn State, and then you will be able to see your own paper matched. And then they recommend you, the system recommend you other papers. So I got some recommendation for physical AI, the second one, which is really… I think it raised my mind. I don't know how it raised, yeah.
+
+[Yun] 10:31:36
+Anyway.
+
+[Yun] 10:31:37
+Yeah, so that's, I really feel like, this space, in…
+
+[Yun] 10:31:45
+Like, ACI work, we don't have a lot of physical ad yet. Evcom has a lot, but I still don't feel like UVCOM has there yet. So, yeah, hopefully we can, we can be the 1st one to do something cool there, yeah.
+
+[Jianan Jiang] 10:31:59
+ok, yeah.
+
+[Yun] 10:32:01
+Okay, then it's really nice meeting you, but we probably have to wrap up this meeting. Yeah, we have some other agenda in place. Really nice meeting you. Let us know if you have any questions. Feel free to contact Jinghui, who is your
+
+[Jianan Jiang] 10:32:09
+Yeah.
+
+[Yun] 10:32:16
+classmates啊。
+
+[Jianan Jiang] 10:32:17
+Yeah, yeah.
+
+[Yun] 10:32:18
+Other grades or younger grades, I forgot. Your younger grades? Oh, oh, young.
+
+[Jinhui Ouyang] 10:32:23
+Younger one.
+
+[Yun] 10:32:25
+Okay, okay, alright, okay, yeah, feel free to contact Jinghui if you have any questions. I look forward to meeting you soon. Yeah.
+
+[Jianan Jiang] 10:32:25
+Yeah, yeah.
+
+[Jianan Jiang] 10:32:30
+Sure, sure.
+
+[Jianan Jiang] 10:32:34
+Okay, sure, thank you so much for your time. Bye.
+
+[Yun] 10:32:35
+Okay.
+
+[Jinhui Ouyang] 10:32:37
+第一。
+
+[Yun] 10:32:37
+3
+
+[Yun] 10:32:37
+Yeah, 5 China.
+

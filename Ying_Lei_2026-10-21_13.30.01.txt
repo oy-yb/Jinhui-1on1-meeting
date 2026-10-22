@@ -1,0 +1,540 @@
+[Ying Lei] 13:00:53
+Yeah, yeah, right.
+
+[Yun] 13:00:54
+I speak to you
+
+[Ying Lei] 13:00:55
+Nice to meet you. Yeah. Thanks, Ryan.
+
+[Yun] 13:00:57
+Yeah, nice meeting you, too. Yeah, well, I have to say.
+
+[Yun] 13:01:01
+It's a very short notice to my lab, because I thought, originally, um, I planned with my… uh, we have a coordinator in the lab, remember? Like, oh, Yang, he used to organize talks, or something like this. But I thought, like, eventually I feel, oh, actually, you used my booking link, so they don't know. So I just randomly called them, say, hey, whoever wants to join will join.
+
+[Yun] 13:01:21
+I'm glad some already, uh, you know, very interested in this, in this meetup. Yeah, um, honestly, I have a lot of things going on right now, so I would like to make sure this is, uh, finished on time, because I do have another meeting, sharp meeting, uh, go to another.
+
+[Yun] 13:01:37
+Meet up with a B-School professor. So I would, yeah, so how about this? The key of this is for us to get to know you and you can ask us questions. Feel free to maybe spend maybe how many minutes you prepare for your talk?
+
+[Ying Lei] 13:01:57
+About my self-introduction, right? OK, it should be less than five minutes.
+
+[Yun] 13:01:59
+Yeah, yeah.
+
+[Yun] 13:02:02
+Okay, yeah, so we can have just, you know, very chilled conversation. You can introduce us your work. If you're having any papers, anything like if even you don't have a presentation, you can just skim through your papers with us. And then basically, I'm interested in learning about.
+
+[Yun] 13:02:20
+How do you identify research questions, your typical research practice and your methods, and your interest topic and future agendas in your PhD program, and if you have any questions for us.
+
+[Yun] 13:02:37
+Hopefully it's not too fast. I mean, yeah, take your time and then feel totally relaxed. The students are very nice. They do have a lot of questions, but they're very nice. They're coming to learn from you and also share, yeah.
+
+[Ying Lei] 13:02:52
+Yes, I got that. Yeah. I did not prepare a slides. I just would like to talk to you like casual chat, so I hope it works.
+
+[Ying Lei] 13:03:06
+Okay, yeah. So I would begin my self introduction. So firstly, thank you for you meeting with me today and being flexible about my rescheduling due to my relocation. So I really appreciate your understanding on that.
+
+[Ying Lei] 13:03:26
+And a little bit about my education background and position now. I have got multidisciplinary training in both human-centered design and computer science from my master's and undergraduate.
+
+[Ying Lei] 13:03:42
+I'm now working on machine learning, especially AI agent in a high stake financial area in Toronto. So I'm here today to explore research opportunities to working with you as I have found super.
+
+[Ying Lei] 13:03:58
+overlaps between us in the research. I would love to continue exploring some interesting topics and developing my research identity further in your group.
+
+[Ying Lei] 13:04:09
+Um, so…
+
+[Ying Lei] 13:04:12
+Across my previous research, I have been focusing on HCI and emerging technologies in complex human and social settings.
+
+[Ying Lei] 13:04:23
+I'm particularly interested in how AI agent systems shape human judgment, agency, and relationships, especially when their influence extends beyond an individual user and often influencing a group like a unit of family or broader social settings.
+
+[Ying Lei] 13:04:44
+I would conclude my research into two directions. One direction is AI assistance or mediation. Another direction is AI delegation personnel.
+
+[Ying Lei] 13:05:00
+So the first is AI assistance or mediation in single user or collective decision making scenarios.
+
+[Ying Lei] 13:05:10
+Early in my path, I started with AI-assisted decision-making for individual use.
+
+[Ying Lei] 13:05:18
+In this work, I modeled correctly likelihood and calibrated human confidence for appropriate reliance on AI suggestions. More recently, I have become interested in what changes when.
+
+[Ying Lei] 13:05:34
+Multiple people are involved. For example, my ongoing work on AI co-parenting examines how separated parents use AI for communication and coordination.
+
+[Ying Lei] 13:05:48
+So in this case, AI might help one parent privately, but it can also influence decisions and consequential outcomes shared by both sides.
+
+[Ying Lei] 13:06:03
+I have found your work from scores to carriers since to explore a very similar settings like parents were often the ones using AI while students were directly affected by those decisions.
+
+[Ying Lei] 13:06:18
+Uh, across these settings, I'm very interested in how we should define a good collective outcomes in this setting, given different stakeholders might have different.
+
+[Ying Lei] 13:06:30
+Participations, interests, powers, and…
+
+[Ying Lei] 13:06:35
+unequal influence.
+
+[Ying Lei] 13:06:37
+And in conflicting social settings or vulnerable cases, I'm also thinking about it.
+
+[Ying Lei] 13:06:44
+It could be related to the balance between individual privacy and autonomy with other stakeholders, agency, and shared accountability.
+
+[Ying Lei] 13:06:57
+And another direction of my research is AI delegation personnel in single user or collective decision making scenarios. So in my serious work on AI afterlife.
+
+[Ying Lei] 13:07:11
+I'm focusing on how people's identity, such as personal stories and thoughts, might be represented by AI agents after death.
+
+[Ying Lei] 13:07:22
+This scenario could involve collective governance within relational and social scaffoldings and the dynamics such as decision making on the access rights and involving options.
+
+[Ying Lei] 13:07:39
+Another project I'm now exploring is when AI agents are on behalf of different residents in the call living context, how personal AI agents should be designed to negotiate and make decisions around everyday shared living arrangements.
+
+[Yun] 13:07:59
+What is that? Co-living?
+
+[Ying Lei] 13:08:02
+Colleen, yeah, I haven't published a paper on that, but I'm exploring.
+
+[Yun] 13:08:07
+What does it mean, colleague? I'm a little bit lost about that contact.
+
+[Ying Lei] 13:08:11
+Oh, so it means they are like roommates. We're living together.
+
+[Yun] 13:08:17
+I mean, human AI call living as a roommate.
+
+[Ying Lei] 13:08:20
+Yes, AI agent represent a different residence, and instead of human-human communication, that would be agent-agent communication.
+
+[Yun] 13:08:30
+That's very interesting.
+
+[Yun] 13:08:32
+Yeah, that's very interesting.
+
+[Ying Lei] 13:08:34
+Yeah, yeah, so, um…
+
+[Ying Lei] 13:08:37
+That's different from your work on personal flow or perspective.
+
+[Yun] 13:08:42
+Yeah.
+
+[Ying Lei] 13:08:43
+My thought is moving from, like, multiple AI agents supporting one user to AI agents participating in a collective decision-making process involving multiple real people. So that could involve questions like.
+
+[Ying Lei] 13:09:00
+How we preserve human agency, participation, define the boundaries, and accountabilities in this process.
+
+[Yun] 13:09:08
+Mm-hmm.
+
+[Ying Lei] 13:09:11
+I have said a lot, but generally speaking, I'm more interested in combining empirical AI research with real human and social settings with designing and evaluating agentic systems.
+
+[Ying Lei] 13:09:25
+I have seen a lot overlapping with your group, but now I would love to hear more about your thoughts on these directions and how you are thinking about the future directions of your group.
+
+[Yun] 13:09:41
+Yeah. So here is my suggestion. How about students? I hear a lot of similar words like family setting and.
+
+[Yun] 13:09:53
+Co-living is very interesting. I feel like it could be more like physical, uh, sensing stuff, like, because right now it's, the AI is more voice-based, right? Um, but I think Elio, uh, Jinhui had more, working on, uh, this more physical setting, but also.
+
+[Ying Lei] 13:10:01
+Yes.
+
+[Yun] 13:10:09
+Fatma, uh, is working more on, um…
+
+[Yun] 13:10:13
+proactive AI, to me, it's like agent… AI has more agency in terms of communicating on this, so I think there's a lot of very interesting… and I think the reason… one of the reasons… so, okay, honestly speaking, I have received a lot of emails, applications, so I think one major reason I'm very interested in your work is because.
+
+[Ying Lei] 13:10:17
+Oh.
+
+[Yun] 13:10:31
+because I… I do see you have published in similar domains, but also your interest… I think you have finance background. It's like your… one of the projects related to finance stuff, right? I think. Like, e-comm, or finance… finance.
+
+[Ying Lei] 13:10:47
+Um, my work?
+
+[Yun] 13:10:48
+Yeah.
+
+[Ying Lei] 13:10:48
+No, I don't have financial project, but I work in financial area now.
+
+[Yun] 13:10:54
+Yeah, yeah, yeah, that's what I'm saying. Like, you are, you're, you're, you're working in that context, and we have, um…
+
+[Yun] 13:11:01
+So our campus has a site in Chicago, which has a whole like units about, you know, kind of development or kind of like a program that works closely with local business.
+
+[Yun] 13:11:18
+which, you know, Chicago is well known for is financial companies or this econ related. So that's why there possibility there is a branch out there, you know, projects related to that corporates. That's why I feel like there could be a synergy between your work or your interest, your background with this potential future research.
+
+[Ying Lei] 13:11:24
+Yeah.
+
+[Yun] 13:11:39
+That's why I'm trying to learn more. But regardless, I would love our students to chat and ask questions about whatever projects to see. Maybe there is potential collaboration, or maybe there is a synergy. Yeah. And but from my perspective, I'm more interested in like your methods, like your methods, like how you work. And also.
+
+[Yun] 13:11:57
+If you can, maybe the first question is, given an example of your recent projects, how long does it take for you to start ideation and development, running studies, and then writing? Like, you have a first author paper, right? Did you?
+
+[Ying Lei] 13:12:14
+Um, yes, I have, um, like, a…
+
+[Ying Lei] 13:12:19
+Surreal 4.
+
+[Yun] 13:12:19
+Okay, great. So, give an example that, like, how you, what did you learn over this first author submissions, and then how you figure out, like, to be a, maybe a ideation, like, how do you.
+
+[Yun] 13:12:34
+how do you discover your own projects that… how do you face, you know, rejections? I have a lot of questions, but you can feel free to pick whichever one comes… resonates to you, yeah.
+
+[Ying Lei] 13:12:45
+Yes, of course. I think that can vary across different projects.
+
+[Ying Lei] 13:12:52
+Like the period from ideation to the final submission period. I will maybe take two examples. One example is my master's.
+
+[Ying Lei] 13:13:08
+This master's work is also on a family setting. It's start from the…
+
+[Ying Lei] 13:13:17
+Like there are two stages. The first stage is autobiographic design is a kind of human-centered design, but with differences. And then there are another period of field deployment.
+
+[Ying Lei] 13:13:32
+And before the autobiographic design, I have take some time for the scoping, literature review, and discussing with my supervisor because he is just the target user of the system.
+
+[Ying Lei] 13:13:51
+Um, and then I have, uh, quickly, like, rapidly prototype and develop a system, deploy it at his home, uh, like, for five months, because I want to get the handle, uh.
+
+[Ying Lei] 13:14:06
+first-hand, uh, experiences. And during this process, I iteratively, um, polish the prototype and the system. And in the…
+
+[Ying Lei] 13:14:17
+in the next five… in the next five weeks, I have recruited external users and deployed my system in their homes, and there are several, like, interviews and catch-up.
+
+[Ying Lei] 13:14:37
+Uh, during this process for feedbacks. Um, and this project lasts a long time through my master's because, uh, I want to make it as solid as possible, and, uh…
+
+[Ying Lei] 13:14:53
+This is one case. Another case is my AI afterlife work. It's a project starting from 2024.
+
+[Ying Lei] 13:15:04
+And I'm starting work — I'm still working in now for some like resubmission.
+
+[Ying Lei] 13:15:12
+But I think, luckily, it could, uh…
+
+[Ying Lei] 13:15:16
+get a decision now. So, the first, uh, the first work of AFN Life was published on…
+
+[Ying Lei] 13:15:23
+on CHI 2025, and in the early stage I'm starting. I'm starting with like developing an AI agent system that could represent an individual after death, like for.
+
+[Ying Lei] 13:15:39
+for the grieving purposes, or… or help people to preserve their identity after death. But, uh, like, after the, uh…
+
+[Ying Lei] 13:15:49
+after I have developed the system I found from the a very pilot study. I find that could cause a lot of ethical problems. So that is another interesting case that.
+
+[Yun] 13:16:00
+Hmm.
+
+[Yun] 13:16:04
+What is the ethical problem?
+
+[Ying Lei] 13:16:04
+Wicked.
+
+[Ying Lei] 13:16:07
+The ethical problem should be if we, uh, use an AI agent to represent people, uh, that could cause lots of emotion safety problem.
+
+[Ying Lei] 13:16:18
+Especially for someone, like, who is dead, and the family members could suffer from the emotional risks.
+
+[Yun] 13:16:18
+Hmm.
+
+[Ying Lei] 13:16:26
+So in the pivot point, we made a decision together to turn the research from a system design and deployment research into a speculative design process.
+
+[Ying Lei] 13:16:42
+Use the prototype to, um…
+
+[Ying Lei] 13:16:46
+as an anchor to ask people questions about their envision about this kind of system, how they would perceive that, the design expectations and their concerns.
+
+[Ying Lei] 13:17:03
+So…
+
+[Ying Lei] 13:17:05
+Um, that is… and uh…
+
+[Ying Lei] 13:17:08
+After the first work published, I have continuing doing another research as a follow up to this work. However, this work is still under revision, so hopefully it could get accepted finally.
+
+[Ying Lei] 13:17:25
+Yeah, that is two cases of my research process. And I mean, the second one, the second one on the afterlife, the first one.
+
+[Ying Lei] 13:17:39
+the summation is very smooth. The process is very smooth. However, the second one get rejection once.
+
+[Ying Lei] 13:17:50
+And I and my co-author decide to make a resubmission to a journal. So it's under the revision now.
+
+[Ying Lei] 13:18:02
+I feel that rejection is a very common process.
+
+[Yun] 13:18:08
+Nice.
+
+[Ying Lei] 13:18:08
+Yeah, and I find that as long as I can find some insights from the reviewers, especially I find they did cover some points that I have never noticed before. I would love to make it and end it to my research.
+
+[Yun] 13:18:29
+Yeah, okay.
+
+[Ying Lei] 13:18:30
+Which I find it would make my work solid and keep better influence in the future. Yeah.
+
+[Yun] 13:18:36
+Yeah.
+
+[Yun] 13:18:37
+Yeah. So how long did you? I forgot. If you answer that question, how long was the life cycle of your project? Typically like, how much time did you spend on literature? Review system building you? You program your system right? You build your own system right?
+
+[Ying Lei] 13:18:52
+Yes, yes.
+
+[Yun] 13:18:53
+Okay, so how long each section and iteratively design, pilot study, user studies, like, writing papers, how long does one cycle look like?
+
+[Ying Lei] 13:19:03
+Yes, I think literature review could be very fast. If I need to estimate a time, I think the initial stage for scoping, I would keep it in one week.
+
+[Ying Lei] 13:19:21
+And…
+
+[Ying Lei] 13:19:23
+But in the later stage, I will keep an eye on the latest papers. Especially in the AI age, I would set my…
+
+[Ying Lei] 13:19:36
+agent to keep an eye on the recent updates on this strata of literatures.
+
+[Ying Lei] 13:19:43
+But before, I think like years before, in a very traditional way, this stage could be extended a lot.
+
+[Ying Lei] 13:19:53
+like, I need to manually, um…
+
+[Ying Lei] 13:19:57
+search and, uh, like, a weekly base, or bi-weekly base, to keep an eye on the latest news.
+
+[Yun] 13:20:05
+Related news about what, like, how do you use it?
+
+[Ying Lei] 13:20:09
+about the literature, the latest literature, especially after the CAI or this or with…
+
+[Ying Lei] 13:20:19
+Like when there are more papers published.
+
+[Yun] 13:20:24
+Okay. Yeah. I think, there are some questions, like, my students suggest me, like, what would you like us to remember you about?
+
+[Ying Lei] 13:20:38
+Okay, that is a very interesting question. I think…
+
+[Ying Lei] 13:20:47
+my, uh…
+
+[Ying Lei] 13:20:51
+I would describe myself as a.
+
+[Ying Lei] 13:20:56
+as a human AI researcher who are super interested in.
+
+[Ying Lei] 13:21:04
+Humanity and the.
+
+[Ying Lei] 13:21:07
+Especially in the intersection of the complex human and social settings, that would include some sensitive or social consequential context.
+
+[Ying Lei] 13:21:23
+So like the topic around the afterlife and the.
+
+[Ying Lei] 13:21:29
+And some highly socially engaged context, like co-living, co-parenting.
+
+[Ying Lei] 13:21:39
+Like, you know, the co-parenting is around some sensitive topics like the divorce or blended family topics like this.
+
+[Ying Lei] 13:21:50
+I'm not saying that I'm just interested in the sensitive or very high stake scenarios. I mean that in such high conflicting and high stake scenarios, we could see more tension between the.
+
+[Ying Lei] 13:22:08
+human and AI interaction, how we could find a problem and using AI assistance mediation to solve these problems. I think I think the solution or the insights we.
+
+[Ying Lei] 13:22:26
+Uh, we got from these high conflicts, and the stake scenarios could also be…
+
+[Ying Lei] 13:22:32
+be applied into some common cases that is more general in our social and relational settings. But generally speaking, I'm a human AI researcher who is interested in.
+
+[Ying Lei] 13:22:48
+in the relational and the social settings.
+
+[Yun] 13:22:53
+Okay, I feel like we have asked many questions.
+
+[Yun] 13:22:59
+Yeah, I see.
+
+[Wanqing Ma] 13:22:59
+May I ask a question? Hi, Lili. I'm Wanqing, and I'm really interested in your work, especially on family topic. Yeah, because I'm also working on.
+
+[Yun] 13:23:01
+Yeah, yeah, yeah, yeah, I thought.
+
+[Wanqing Ma] 13:23:14
+topic like children and AI. So, I'm curious about… could you share more… some interest of funding in the work of, like, exploring AI-mediated co-parenting in this work? Uh, like, could you share some findings you observed, and uh…
+
+[Wanqing Ma] 13:23:33
+like, would you like to continue to extend this topic in the future? And if so, how would you like to continue this topic and, like, narrow down on which topic which.
+
+[Wanqing Ma] 13:23:49
+focus. Yeah. Yeah. But if you don't want to continue, it is okay. I'm just curious about your future plan on this topic.
+
+[Ying Lei] 13:23:59
+Yes, I'm, of course, very interested in continuing this topic because at current stage, the AI co-parenting is like just interview one side of the co-parenting context. I did not engage two side of.
+
+[Ying Lei] 13:24:15
+the co-parenting setting because their relationship could be high conflicting. And so I start from like intervene one side and get their usage pattern and explore the tensions.
+
+[Ying Lei] 13:24:32
+within it. I did not like interviewing two side. I'm also, I haven't developing or prototyping some systems to put it in this process.
+
+[Ying Lei] 13:24:46
+to try to make some mediation or assistance. I think they are all potential directions for this research. And I'm also very interested, to be specific, I'm interested in like the.
+
+[Ying Lei] 13:25:05
+Communication, the…
+
+[Ying Lei] 13:25:07
+coordination dynamics if two sides of the parents using, uh, the shared AI agent. That is one pattern I observe from… from these cases, but I'm not sure how general this could be, but I'm very interested in, like, two sides using.
+
+[Ying Lei] 13:25:26
+one AI agent, but different parties may have different interests, and unlike the…
+
+[Ying Lei] 13:25:34
+like the technical literacy like using the AI agent. I'm very interested in the like the power dynamics and how how it in reverse shapes their relationships.
+
+[Ying Lei] 13:25:49
+That could be one potential.
+
+[Ying Lei] 13:25:52
+one potential direction. Specifically. And.
+
+[Ying Lei] 13:25:58
+Yes, but I'm not sure whether in this case we could use some computational methods.
+
+[Ying Lei] 13:26:05
+But currently, many use the empirical interview.
+
+[Ying Lei] 13:26:14
+kind of thing. But I think maybe in the future that could also be extended into some computational method to explore the communication coordination dynamics and use that to punish the AI system design.
+
+[Ying Lei] 13:26:30
+to better support them.
+
+[Ying Lei] 13:26:32
+Hope that solve your problem.
+
+[Wanqing Ma] 13:26:35
+Yeah, thank you for your answer. And yeah, I'm also very interested in what you said, power dynamic, and especially if we involved the other generation like grandpa, grandmother, and also parents and also children.
+
+[Wanqing Ma] 13:26:52
+Yeah, so I think that would be really interesting topic. Yeah.
+
+[Ying Lei] 13:26:56
+Yes.
+
+[Fatima Ali] 13:26:59
+Um, I also have, uh, a question. It's a small question, though. Uh, I think I was really interested, um, in what you're doing, and, uh, I'm curious because you also keep mentioning that you're very interested in the human angle.
+
+[Fatima Ali] 13:27:15
+And I just, uh, am wondering, um…
+
+[Fatima Ali] 13:27:19
+Because of your insistence on making your work more user-centric, or if that's how I'm perceiving it, do you have any kind of background with maybe anthropology or psychology or these different types of courses?
+
+[Fatima Ali] 13:27:36
+I, I feel like I just want, want to know you a little bit better, so maybe if you can tell me.
+
+[Fatima Ali] 13:27:44
+how… because, like, you have a CS background, so you could… you could have obviously gone more into the computational or the technological side, in which you obviously, in your papers, might be also working on, but I just…
+
+[Fatima Ali] 13:27:58
+think that I'm seeing an interest in more users, and, like, humans, and how the interaction is working, and the relational aspect. Uh, so I was just, like, um, curious about this.
+
+[Ying Lei] 13:28:10
+Okay. So I think too briefly, people always keep an eye on the social contacts around me, like my relatives, my family members, and my connections. So I'm very interested in those things happening on them, but also on me.
+
+[Ying Lei] 13:28:29
+So I have interest, genuinely interested in this ocean and human questions. And I haven't taken any courses, but I would read books on these fields. And I think it's also related to my early work.
+
+[Ying Lei] 13:28:45
+on AIC decision making where I have learned some cognition, like reliance, trust, kind of thing. And in my network, I also engage some social and psychological.
+
+[Ying Lei] 13:29:02
+theories like social convey and social support scenarios theories and like identity, narrative identity theories. I mean that I.
+
+[Ying Lei] 13:29:16
+I may have generally interested in learning more about this multidisciplinary knowledge and apply this in my research.
+
+[Fatima Ali] 13:29:26
+Yeah, thank you so much.
+
+[Ying Lei] 13:29:29
+You're welcome.
+
+[Yun] 13:29:31
+Okay, I really have to thank you so much for all the questions. Thank you, Ying, for your time. I really have to switch to another meeting. So maybe, how about this? I will definitely, let's wrap up this meeting, and Ying, feel free to contact us if you have any follow up questions.
+
+[Yun] 13:29:48
+I appreciate all the students who can join. We have… I think this is the last very short message. I appreciate everybody can join us. Yeah.
+
+[Yun] 13:29:57
+Thank you. Thank you, Ian.
+
+[Ying Lei] 13:29:59
+Thank you all. Have a good day.
+
+[Yun] 13:29:59
+Thank you, everyone. Thank you, everyone. Bye. By
+

@@ -1,0 +1,499 @@
+
+[Yun] 10:32:37
+Yeah, 5 China.
+
+[Yun] 10:32:42
+Yeah, okay, hi payu, right? Peiyuan.
+
+[Peiyuan Ge] 10:32:45
+可以。Professor。
+
+[Peiyuan Ge] 10:32:46
+Yes, yes, can i share this slide?
+
+[Yun] 10:32:49
+Yeah, sure, sure, nice meeting you. Wanqing, you are the host, feel free to take over, yeah.
+
+[Peiyuan Ge] 10:32:52
+Okay。不停。
+
+[Wanqing Ma] 10:32:57
+So uh.
+
+[Wanqing Ma] 10:32:59
+Happy to have you today and.
+
+[Wanqing Ma] 10:33:03
+So i will let you first introduce yourself, and we might have some time for question later. Yeah, so let's guys started.
+
+[Peiyuan Ge] 10:33:12
+Okay? Okay?
+
+[Peiyuan Ge] 10:33:17
+Can you.
+
+[Yun] 10:33:21
+There's a little bit delay, that's okay.
+
+[Peiyuan Ge] 10:33:24
+Okay, okay, sorry we did, we?
+
+[Peiyuan Ge] 10:33:33
+Why, uh sorry, i i don't know why it is.
+
+[Yun] 10:33:37
+Are you using VPN? I guess you're using VPN, huh?
+
+[Peiyuan Ge] 10:33:42
+哦yes，okay。
+
+[Yun] 10:33:42
+I think as long as Ben in China, is it Zoom is banned in China? No. Okay, good now.
+
+[Peiyuan Ge] 10:33:47
+Okay? Okay?
+
+[Peiyuan Ge] 10:33:49
+Okay, uh is my owner to introduce myself. My name is teen. I graduated from college of design, innovation towards university and.
+
+[Peiyuan Ge] 10:34:05
+And the publication and the future of
+
+[Peiyuan Ge] 10:34:12
+I got my degree in machine learning university, and I was
+
+[Peiyuan Ge] 10:34:18
+的可以办。
+
+[Peiyuan Ge] 10:34:23
+I
+
+[Yun] 10:34:23
+我很轻。
+
+[Yun] 10:34:24
+配元，sorry，i think there's a huge jitter we can barely hear you well. Um, what we can do is, if you mute, if you, um, turn off your camera.
+
+[Yun] 10:34:34
+Turn off your cover.
+
+[Peiyuan Ge] 10:34:36
+o k.
+
+[Yun] 10:34:36
+Yeah, turn off your camera, maybe that helps. Now speak.
+
+[Peiyuan Ge] 10:34:41
+Oh, okay, okay, I also got a double major in art study from Communication University of China, and I was Beijing Outstanding graduate. My current research area, uh, human AI collaboration and design judgment.
+
+[Yun] 10:34:44
+Oh, that's better.
+
+[Peiyuan Ge] 10:35:01
+I have res- reserve for national scholarship and won several awards.
+
+[Peiyuan Ge] 10:35:08
+companies
+
+[Peiyuan Ge] 10:35:09
+And up to now, I have published 6 conference papers. 4 of them are faster other papers, and 3 conference in… this conference include DIS, Kumulus, TNP, E&PDN, CW.
+
+[Peiyuan Ge] 10:35:26
+And I also just for people to pay 27, and it's still under review. I'd like, I'm now working on July, papers in education and HCI.
+
+[Peiyuan Ge] 10:35:41
+And my master series was titled A Research on Innovation Totals to promote Creative Thinking in design beginners. I also convince this series into general article.
+
+[Peiyuan Ge] 10:35:57
+For supermission, and hope to enhance my application, material with, the achievements.
+
+[Peiyuan Ge] 10:36:04
+And to explain more my serious research have 6 parts, and 3 parts are already published, and the rest are under review. And my master research idea comes from my ex.
+
+[Peiyuan Ge] 10:36:19
+explain, experiment use AI total. I noticed that, when user generates lots of manage with AI, they just take, pick pictures directly.
+
+[Peiyuan Ge] 10:36:34
+They do not think about the design process, and I want to find out why this happened and how we can help them focus on design thinking. And first, st I went, 2 systems.
+
+[Peiyuan Ge] 10:36:50
+来model on studying to study beginners' application of, uh, AI totals.
+
+[Peiyuan Ge] 10:37:05
+And from this work, I got practical suggestion for technology design. And next, I did quality research. I compared, 22 experts and 19, 19, 198.
+
+[Peiyuan Ge] 10:37:22
+Beginners and to find difference in their creative thinking. I also, I also thought popular AIGC total by, their intelligent logic. And finally, I built my CT AI support total.
+
+[Peiyuan Ge] 10:37:38
+And run experience to promote it's works.
+
+[Peiyuan Ge] 10:37:42
+And I'd like to share one of the research papers that submitted to Kai, and called Creative Thinking AI.
+
+[Peiyuan Ge] 10:37:51
+And we all, we all know, generation AI challenges the way, we design. Today, we, can simple type a few words, and AI can generate many images in just a few.
+
+[Peiyuan Ge] 10:38:07
+Second seconds and this make design much faster and easier, and especially for designers, but it also brings a new problem, and when AI can generate so many images.
+
+[Peiyuan Ge] 10:38:25
+We still, seem carefully about our design.
+
+[Peiyuan Ge] 10:38:29
+decisions. For example, when a student get a, AI-generated image and they may simply choose the one they like, but they may not ask why the image is good, and what problem
+
+[Peiyuan Ge] 10:38:45
+What problem is have, or how they can improve it? So our research is focused on one main question. How can we help design beginners think more creative thinking when they work with AI?
+
+[Peiyuan Ge] 10:39:02
+And to answer these questions, we care out our research in 3 with 198 design beginners, and we ask them to compare
+
+[Peiyuan Ge] 10:39:17
+complete the design task, use generation AI and share their experience, and we want to understand how they used AI and how they made decisions, and what problem they faced.
+
+[Peiyuan Ge] 10:39:31
+And we collect their design recall word and written answers. Then we analyze the, data and found 6 months, theorems, include AI creation and safe reflection design, important thinking.
+
+[Peiyuan Ge] 10:39:49
+is second, we study different AI design tools and to understand how they infer the support the design process. Besides, on these findings, we
+
+[Peiyuan Ge] 10:40:05
+然finally we test the platform with45, and, uh, particular, who compared the for study.
+
+[Peiyuan Ge] 10:40:22
+And for our 1st study, we found something interesting. Many design beginners know how to use AITO, but they don't know, always know how to make good design decisions.
+
+[Peiyuan Ge] 10:40:36
+For example, when AI created an image that doesn't meet their experience, students also are often just change their promote and generation another image.
+
+[Peiyuan Ge] 10:40:51
+But they don't want to stop and ask, why did this image work, and what's the problem caused by my promotes, and did IA clear experience my design goal, or
+
+[Peiyuan Ge] 10:41:08
+called behavioral total center reflection, uh, debugging, and in simple words, uh, student focus on fix the AI output rather than understanding
+
+[Peiyuan Ge] 10:41:23
+The design problems this finding help me understand what kind of support design beginner, really need.
+
+[Peiyuan Ge] 10:41:35
+And beside on these feelings, and we developed, creative thinking AI.
+
+[Peiyuan Ge] 10:41:41
+The main idea is simple. We don't want to AI to make design, design, design decision for students. We want AI to help students make better decisions themselves. Our platform fixed
+
+[Peiyuan Ge] 10:41:56
+Follow 6 stitch.
+
+[Peiyuan Ge] 10:41:59
+And the 1st city is in-emeth their students define their decision ideas, goals, and product functions, and second stage is empathy. Students think their about their, target user and
+
+[Peiyuan Ge] 10:42:16
+What those users really need. And the 3rd stage is person, and students use AI to generate different design ideas and possible, solutions.
+
+[Peiyuan Ge] 10:42:31
+And the 4th stage is exploitation, and however student improve their design, designs, but instead of a simple generate new images, the system encourages them to think
+
+[Peiyuan Ge] 10:42:47
+about此，我此问，此wrong and how to factor it. Uh, the fifth stage is explosion and student compared different design results and explain, uh, why they choose one design over others.
+
+[Peiyuan Ge] 10:43:02
+And they are also encouraged to think about process in core insurance each as core rights, copyright, and finally, the 6, th stage is, is, is Haitian.
+
+[Peiyuan Ge] 10:43:18
+And the system helps students review their own design process and create a final design reports and, one important feature of CTAI is that keeper
+
+[Peiyuan Ge] 10:43:33
+有2rewards of design process. For example, it's save promotes generation image and different visuals, and the reason behind design decisions, the less means student can go back.
+
+[Peiyuan Ge] 10:43:49
+Compared their ideas and understand how they design have changed. So instead of training AI generation image as a final answer, we encourage students to use their information of
+
+[Peiyuan Ge] 10:44:04
+for, for thinking, comparing, and make decisions.
+
+[Peiyuan Ge] 10:44:10
+And then after divided for this platform, we invite design beginners to test it, and first, st particularly compared the future, design task with their own AI tool. They can compared the same task used
+
+[Peiyuan Ge] 10:44:26
+ctai after that we collect questionnaire and short interview. The result was encouraging, and we also found some positive challenges, uh, in, in individual creative thinking questionnaires.
+
+[Peiyuan Ge] 10:44:43
+And, for example, participity report pay more attention to copyright and culture issues after use the platform. However, not all soccer improved.
+
+[Peiyuan Ge] 10:45:01
+because this was an early study without a control group, and we can't stay at CTI directly in poor credit thinking skill, but the results suggest that
+
+[Peiyuan Ge] 10:45:16
+this kind of design process is useful and worth exploring further.
+
+[Peiyuan Ge] 10:45:22
+And to conclusion, our research, makes 3 main contribution. First, st we innovate some common problems that design beginners face when used generation AI, and second, development assist
+
+[Peiyuan Ge] 10:45:40
+6-stage design process that help a student reflect compared and make decision. And 3, rd we test this approach to connect early feedback about how it supports AI access design learning.
+
+[Peiyuan Ge] 10:45:55
+I believe that this goal of AI in design should not only to help people create image first, st more important AI should help people to understanding
+
+[Peiyuan Ge] 10:46:11
+there in other words, we don't just want to student to learn how to use AI, we want them to learn how to think with AI.
+
+[Peiyuan Ge] 10:46:27
+Next we can watch the demo, video for of the software.
+
+[Peiyuan Ge] 10:49:03
+Okay, I also see the paper about perspective, and prospector and, and quit thinking both in me to support the critical thinking AI, but they use different approach.
+
+[Peiyuan Ge] 10:49:20
+And I think, this is, they all help, design, compare the AI, generation image in identifying problems, it's plan, their truth and reflect on.
+
+[Peiyuan Ge] 10:49:37
+others, their decision. So the main difference is that per spectre focused on decent, dis-discuss and evaluate different ideas will
+
+[Peiyuan Ge] 10:49:52
+create a single focus on make bite design, design decisions through the reflect and practice.
+
+[Peiyuan Ge] 10:49:59
+And for my other papers, I would work safe healing service, design for young Chinese people who we're, pre-breed and, I start, I study the experience of older, older, alter doing factor.
+
+[Peiyuan Ge] 10:50:15
+Live stream. I built an intervene system for elder user. I also use kernel models and QFD in Prem England English exam systems.
+
+[Peiyuan Ge] 10:50:28
+And it was a county research on smart service experience designed for elder people join the live grouping, fit class, and this is through, use AI to generate healing.
+
+[Peiyuan Ge] 10:50:44
+Intelligent product and service, forbids.
+
+[Peiyuan Ge] 10:50:49
+And beside on the canal QFD, and this is demand function transform for the English computer beside XMAND and design the interface systems.
+
+[Peiyuan Ge] 10:51:05
+And for all this project, my research interest in human AI collaboration, design, judgment, and design thinking in support totals.
+
+[Peiyuan Ge] 10:51:17
+And the build on my master works, I focus on different between expect the beginner in Creative Thinking AI when use AI for design, but when I tried to build a series of design, creative design thinking, I realized I was not ready
+
+[Peiyuan Ge] 10:51:36
+for this theory level. So instead, I want to keep exploring the topic of design judgment. I want to answer a question when design work with AI, and does design judgment still depend on their ease?
+
+[Peiyuan Ge] 10:51:52
+experience what's the ruler啊，do they, uh, use to pick good designers?
+
+[Peiyuan Ge] 10:52:01
+And I have 4, research questions for directly, and if you are interested, I will, explain, how I plan to, solve them.
+
+[Peiyuan Ge] 10:52:14
+And I have, I have
+
+[Peiyuan Ge] 10:52:15
+I will study a design for 8 years, but I have confidence about who I'm research and what, what my work is really worth. I was figuring out what design really is, or why it needed to
+
+[Peiyuan Ge] 10:52:31
+To be, it's on my field, and I want to go into my PhD with these doubles.
+
+[Peiyuan Ge] 10:52:38
+And in past 3 years of academic trainings, I'm good at cognitive and quality research. I, use web coding and code large language models, APIs for smart produce, design, and
+
+[Peiyuan Ge] 10:52:53
+developments.
+
+[Peiyuan Ge] 10:52:55
+I have to, join research projects, right, grant application works as a teach or system and give the lecture. And I also take part in many industry and academics. I'm able to handle different kind of research tasks.
+
+[Peiyuan Ge] 10:53:13
+And as an interbeing lab of polyure, I have a research proposal and draw figure, and I was a teacher assistant photo course.
+
+[Peiyuan Ge] 10:53:23
+And I'm feeling with the struggle equally model canal QFD system-led review and biology any size.
+
+[Peiyuan Ge] 10:53:35
+And I also strong in quantitative research and analyst. This all my skill for data collection andise, and this is all my safe, safe reports, and I have made to make. I really want to obtain this
+
+[Peiyuan Ge] 10:53:52
+chance, please consult me.
+
+[Peiyuan Ge] 10:53:56
+thank you.
+
+[Yun] 10:54:00
+Yeah, thank you so much, thank you so much, Pei Pei Yuan, for your presentation. I think I would love to open the door for my students to ask questions, if any, anyone has done relevant topics, maybe
+
+[Yun] 10:54:16
+行业do you have any questions? I hear from, like, creating that's very touching your space, yeah.
+
+[Hangyue Zhang] 10:54:18
+Ok.
+
+[Hangyue Zhang] 10:54:21
+Yeah. So um thank you ping for uh for the talk. Uh. So i'm interested in your work um the critical thinking for uh nova. So i saw that you break the whole process into different steps like.
+
+[Hangyue Zhang] 10:54:38
+Emergence andphesy experiment something like that。So um，do you？Based on any series？We're free模式to design those stages like where does it come from？I'm curious about it，and i'm just curious about um。I think i'm i'm also a little bit unsure like how to support the critical thinking。Yeah。
+
+[Peiyuan Ge] 10:54:59
+Okay Okay, and it's,
+
+[Peiyuan Ge] 10:55:16
+model, design thinking model to promote the creative thinking, but I use this model. This model, just, supports 6 stage to support creative thinking in design pros, process, but
+
+[Peiyuan Ge] 10:55:36
+I use it to use AI with AI access, and it's, promo, come from, come from my user, study, and I, support some critical thinking support.
+
+[Peiyuan Ge] 10:55:54
+such as these come from, and I,
+
+[Peiyuan Ge] 10:56:01
+Use this or bought some a six-stage questions and these, questions come from the 6 page and they all have some, step by step by step.
+
+[Peiyuan Ge] 10:56:17
+And so they come, they, come from a series, but, I support, I, come, I, I come from, this theory, but
+
+[Peiyuan Ge] 10:56:32
+Support is, as a software, and this is the page about, and, each page also,
+
+[Peiyuan Ge] 10:56:46
+Also, take the.
+
+[Peiyuan Ge] 10:56:53
+Once they tell about the,
+
+[Peiyuan Ge] 10:56:58
+The thinking process.
+
+[Peiyuan Ge] 10:57:01
+I don't know, I explain this question.
+
+[Hangyue Zhang] 10:57:09
+I have a follow-up on this, though. Uh, when designing, uh, like, the system, like, how do you find the relevant or suitable theory to guide your design?
+
+[Peiyuan Ge] 10:57:24
+when I designed my, uh, when I designed my, uh, uh…
+
+[Peiyuan Ge] 10:57:31
+I… I just, I just, I just use the user study and,
+
+[Peiyuan Ge] 10:57:40
+来来let me，just use use master experience, but I have no about series. Uh, I don't, I don't know the
+
+[Peiyuan Ge] 10:57:54
+Oh, what's you serious about such as
+
+[Peiyuan Ge] 10:58:00
+Creat thinking theories or some design theories
+
+[Hangyue Zhang] 10:58:10
+I think I mean, for the critical thinking part, like, how do you find the relevant series and select them, yeah?
+
+[Peiyuan Ge] 10:58:25
+I, I just, I just followed, followed my, my user status, user studies,
+
+[Peiyuan Ge] 10:58:40
+那那user studies
+
+[Peiyuan Ge] 10:58:44
+use study points and in the design, I,
+
+[Peiyuan Ge] 10:58:51
+I think I can't… I didn't allow some, service about it.
+
+[Hangyue Zhang] 10:59:02
+Okay. Thank you.
+
+[Yun] 10:59:04
+Okay, well, thank you, Piyuan. I think we are generally wondering how much time we we're scheduled for the, meetup.
+
+[Yun] 10:59:16
+30 min?
+
+[Wanqing Ma] 10:59:16
+To.
+
+[Yun] 10:59:17
+Did we start, like?
+
+[Wanqing Ma] 10:59:18
+Yeah, it's thirty minutes, and it's already.
+
+[Yun] 10:59:22
+Okay, time's up, okay. Yeah, because we do have a regular meeting. I'm not sure, I'm checking, like, oh yeah, okay, so, but I do have another proposal, do…
+
+[Wanqing Ma] 10:59:23
+Eleven.
+
+[Peiyuan Ge] 10:59:29
+Okay, okay.
+
+[Yun] 10:59:32
+I have to send a proposal draft to the, to the university, so I have to go. But yeah, and also, typically we have a live meeting. Is there at 11 or 10? Did we take the lab meeting time for this?
+
+[Peiyuan Ge] 10:59:46
+Okay.
+
+[Yun] 10:59:46
+Oh, yeah.
+
+[Hangyue Zhang] 10:59:50
+Yeah, I think…
+
+[Yun] 10:59:51
+When is your regular
+
+[Hangyue Zhang] 10:59:53
+Yeah, I think we overlap with the regular lab meeting time.
+
+[Yun] 10:59:57
+Okay Okay, like, you scheduled this meeting with us, and then sharing your work, at this late.
+
+[Yun] 11:00:14
+Evening time, and I think a lot of this very interesting work about critical thinking and then design, actually Wanqin and I we're talking about some idea quite relevant to this, but even maybe in a different application setting, but very similar, so I'm pretty sure they're gonna be very interesting, some kind of, like, overlapping interest.
+
+[Yun] 11:00:37
+Yeah, but I get given the time we probably have to wrap up this meeting, and then, if you have any question, feel free to email me, peiyuan, like, after this, and then I can, share my thoughts about if there is a good fit between your application and our lab.
+
+[Yun] 11:00:54
+How about that,配元？
+
+[Peiyuan Ge] 11:00:55
+Okay, okay, thank you for your time. Thank you, everyone.
+
+[Yun] 11:00:58
+Yeah, yeah, thank you, thank you, Peyan.
+
+[Yun] 11:01:01
+Yeah, right, bye, thank you.
+
+[Peiyuan Ge] 11:01:02
+Bye!
+
+[Yun] 11:01:06
+Okay. Hi guys, long time not see, yeah, I do have another proposal to submit very soon. Oh my goodness, they're waiting for my… anyway, so, some quick thoughts, regarding, do we
+
+[Yun] 11:01:22
+Oh yeah, do we still keep the, like, regular, paper review session? Not yet, or yes?
+
+[Jinhui Ouyang] 11:01:29
+Not yet this overlap of this two meeting, i think.
+
+[Yun] 11:01:32
+So this week we don't have, right? So, guess your… are you guys trying to keep up next week or not?
+
+[Jinhui Ouyang] 11:01:34
+Yeah.
+
+[Jinhui Ouyang] 11:01:40
+Maybe we keep up. I think.
+
+[Yun] 11:01:43
+Yeah, yeah, yeah, okay.
+
+[Yun] 11:01:45
+Because I do feel like, I don't know, like, if you guys all shared all the papers, but also, I think some of our students have, like, new study design that we can leverage the lab, you know, we can maybe have a little bit, like, a longer session, or not longer session, not using the whole, you know.
+
+[Yun] 11:02:03
+啊，男members to do that, but, like, uh, maybe Wednesday time, uh, before and after that could be a little time, like, to catch up, like, giving feedback to our labs. Um, yeah, the paper swamp is paper swamp, right? But, um, yeah.
+
+[Yun] 11:02:19
+And the other thing is, like, Wanqin, do you want to quickly share your lab, web page design? Is that the whole page thing, like, the whole
+
